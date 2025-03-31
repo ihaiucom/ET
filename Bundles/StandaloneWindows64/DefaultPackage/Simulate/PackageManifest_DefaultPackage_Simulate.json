@@ -66,14 +66,14 @@
         },
         {
             "Address": "AIConfigCategory",
-            "AssetPath": "Packages/cn.etetet.excel/Config/Bytes/c/AIConfigCategory.bytes",
+            "AssetPath": "Packages/cn.etetet.yiuilubangen/Assets/Config/Binary/Client/AIConfigCategory.bytes",
             "AssetGUID": "",
             "AssetTags": [],
             "BundleID": 1
         },
         {
             "Address": "UnitConfigCategory",
-            "AssetPath": "Packages/cn.etetet.excel/Config/Bytes/c/UnitConfigCategory.bytes",
+            "AssetPath": "Packages/cn.etetet.yiuilubangen/Assets/Config/Binary/Client/UnitConfigCategory.bytes",
             "AssetGUID": "",
             "AssetTags": [],
             "BundleID": 1
@@ -351,17 +351,17 @@
             "UnityCRC": 0,
             "FileHash": "09fb6d0d0f68d58856759eb451450f1f",
             "FileCRC": "00000000",
-            "FileSize": 1304808,
+            "FileSize": 1339636,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
         },
         {
-            "BundleName": "defaultpackage_packages_cn_etetet_excel_config_bytes_c.bundle",
+            "BundleName": "defaultpackage_packages_cn_etetet_yiuilubangen_assets_config_binary_client.bundle",
             "UnityCRC": 0,
-            "FileHash": "19ee774a2f3c6714a102cc44d5856d3a",
+            "FileHash": "fa809393103d06badfdbff906c6c5c15",
             "FileCRC": "00000000",
-            "FileSize": 659,
+            "FileSize": 116,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []

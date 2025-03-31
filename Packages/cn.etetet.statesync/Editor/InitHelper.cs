@@ -10,7 +10,8 @@ namespace ET
         {
             HybridCLREditor.Init();
             
-            ExcelEditor.Init();
+            // EditorApplication.ExecuteMenuItem("ET/Excel/ExcelExporter");
+            EditorApplication.ExecuteMenuItem("ET/Excel/ExcelExporter");
             
             ProtoEditor.Init();
             
