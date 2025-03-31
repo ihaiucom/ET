@@ -15,45 +15,77 @@ namespace YooAsset.Editor
 
         protected override string GetUnityHash(BuildBundleInfo bundleInfo, BuildContext context)
         {
-            // 注意：当资源包的依赖列表发生变化的时候，ContentHash也会发生变化！
-            var buildResult = context.GetContextObject<TaskBuilding_SBP.BuildResultContext>();
-            if (buildResult.Results.BundleInfos.TryGetValue(bundleInfo.BundleName, out var value))
+            var buildParametersContext = context.GetContextObject<BuildParametersContext>();
+            var parameters = buildParametersContext.Parameters;
+            var buildMode = parameters.BuildMode;
+            if (buildMode == EBuildMode.SimulateBuild)
             {
-                return value.Hash.ToString();
+                return "00000000000000000000000000000000"; //32位
             }
             else
             {
-                string message = BuildLogger.GetErrorMessage(ErrorCode.NotFoundUnityBundleHash, $"Not found unity bundle hash : {bundleInfo.BundleName}");
-                throw new Exception(message);
+                // 注意：当资源包的依赖列表发生变化的时候，ContentHash也会发生变化！
+                var buildResult = context.GetContextObject<TaskBuilding_SBP.BuildResultContext>();
+                if (buildResult.Results.BundleInfos.TryGetValue(bundleInfo.BundleName, out var value))
+                {
+                    return value.Hash.ToString();
+                }
+                else
+                {
+                    string message = BuildLogger.GetErrorMessage(ErrorCode.NotFoundUnityBundleHash, $"Not found unity bundle hash : {bundleInfo.BundleName}");
+                    throw new Exception(message);
+                }
             }
         }
         protected override uint GetUnityCRC(BuildBundleInfo bundleInfo, BuildContext context)
         {
-            var buildResult = context.GetContextObject<TaskBuilding_SBP.BuildResultContext>();
-            if (buildResult.Results.BundleInfos.TryGetValue(bundleInfo.BundleName, out var value))
+            var buildParametersContext = context.GetContextObject<BuildParametersContext>();
+            var parameters = buildParametersContext.Parameters;
+            var buildMode = parameters.BuildMode;
+            if (buildMode == EBuildMode.SimulateBuild)
             {
-                return value.Crc;
+                return 0;
             }
             else
             {
-                string message = BuildLogger.GetErrorMessage(ErrorCode.NotFoundUnityBundleCRC, $"Not found unity bundle crc : {bundleInfo.BundleName}");
-                throw new Exception(message);
+                var buildResult = context.GetContextObject<TaskBuilding_SBP.BuildResultContext>();
+                if (buildResult.Results.BundleInfos.TryGetValue(bundleInfo.BundleName, out var value))
+                {
+                    return value.Crc;
+                }
+                else
+                {
+                    string message = BuildLogger.GetErrorMessage(ErrorCode.NotFoundUnityBundleCRC, $"Not found unity bundle crc : {bundleInfo.BundleName}");
+                    throw new Exception(message);
+                }
             }
         }
         protected override string GetBundleFileHash(BuildBundleInfo bundleInfo, BuildParametersContext buildParametersContext)
         {
             string filePath = bundleInfo.PackageSourceFilePath;
-            return HashUtility.FileMD5(filePath);
+            var buildMode = buildParametersContext.Parameters.BuildMode;
+            if (buildMode == EBuildMode.SimulateBuild)
+                return GetFilePathTempHash(filePath);
+            else
+                return HashUtility.FileMD5(filePath);
         }
         protected override string GetBundleFileCRC(BuildBundleInfo bundleInfo, BuildParametersContext buildParametersContext)
         {
             string filePath = bundleInfo.PackageSourceFilePath;
-            return HashUtility.FileCRC32(filePath);
+            var buildMode = buildParametersContext.Parameters.BuildMode;
+            if (buildMode == EBuildMode.SimulateBuild)
+                return "00000000"; //8位
+            else
+                return HashUtility.FileCRC32(filePath);
         }
         protected override long GetBundleFileSize(BuildBundleInfo bundleInfo, BuildParametersContext buildParametersContext)
         {
             string filePath = bundleInfo.PackageSourceFilePath;
-            return FileUtility.GetFileSize(filePath);
+            var buildMode = buildParametersContext.Parameters.BuildMode;
+            if (buildMode == EBuildMode.SimulateBuild)
+                return GetBundleTempSize(bundleInfo);
+            else
+                return FileUtility.GetFileSize(filePath);
         }
     }
 }

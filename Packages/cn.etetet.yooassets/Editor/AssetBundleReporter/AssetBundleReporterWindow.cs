@@ -104,7 +104,7 @@ namespace YooAsset.Editor
 
         private void ImportBtn_onClick()
         {
-            string selectFilePath = EditorUtility.OpenFilePanel("导入报告", EditorTools.GetProjectPath(), "report");
+            string selectFilePath = EditorUtility.OpenFilePanel("导入报告", EditorTools.GetProjectPath(), "json");
             if (string.IsNullOrEmpty(selectFilePath))
                 return;
 
@@ -112,16 +112,16 @@ namespace YooAsset.Editor
             string jsonData = FileUtility.ReadAllText(_reportFilePath);
             _buildReport = BuildReport.Deserialize(jsonData);
             _summaryViewer.FillViewData(_buildReport);
-            _assetListViewer.FillViewData(_buildReport, _reportFilePath);
-            _bundleListViewer.FillViewData(_buildReport, _reportFilePath);
+            _assetListViewer.FillViewData(_buildReport, _searchKeyWord);
+            _bundleListViewer.FillViewData(_buildReport, _reportFilePath, _searchKeyWord);
         }
         private void OnSearchKeyWordChange(ChangeEvent<string> e)
         {
             _searchKeyWord = e.newValue;
             if (_buildReport != null)
             {
-                _assetListViewer.RebuildView(_searchKeyWord);
-                _bundleListViewer.RebuildView(_searchKeyWord);
+                _assetListViewer.FillViewData(_buildReport, _searchKeyWord);
+                _bundleListViewer.FillViewData(_buildReport, _reportFilePath, _searchKeyWord);
             }
         }
         private void ViewModeMenuAction0(DropdownMenuAction action)

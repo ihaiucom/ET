@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>Temp\Bin\Debug\ET.HotfixView\</OutputPath>
-    <DefineConstants>UNITY_2022_3_17;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY;ENABLE_VIEW;INITED;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;YOO_ASSET_2;YOO_ASSET_2_3;YOO_ASSET_2_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_17;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY;ENABLE_VIEW;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;DOTWEEN;TextMeshPro;INITED;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -41,6 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuiframework\YIUI.BindSourceGenerator.dll" />
+    <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuiinvoke\YIUI.InvokeSourceGenerator.dll" />
     <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.sourcegenerator\ET.SourceGenerator.dll" />
     <Analyzer Include="D:\unity_editor\2022.3.17f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\unity_editor\2022.3.17f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
@@ -48,35 +50,190 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\ConfigLoaderInvoker.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Tips\TipsPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUISystem\GM\GMViewComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\YIUIGen\RedDot\RedDotStackItemComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_Close.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUIGen\LoopScrollRectDemo\LoopScrollRectDemoPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\YIUIGen\Login\LoginPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Get.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_SafeArea.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUISystem\GM\GMParamItemComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\View\YIUIViewlComponentSystem_Get.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\Factory\YIUIFactory_UI_Async.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_AddRemove.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Load\YIUILoadComponentSystem_Type.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\Factory\YIUIFactory_UI.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\YIUISystem\RedDot\RedDotDataItemComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\UI\UILogin\AppStartInitFinish_CreateLoginUI.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Scripts\HotfixView\Client\ResourcesLoaderComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILobby\UILobbyEvent.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeRemoveUIResetHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Open_WaitString.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeInstantiateHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\ETTask\ETTaskHelper.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUIGen\LoopScrollRectDemo\LoopScrollHorizontalViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeCoroutineLockHandler.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILogin\AppStartInitFinish_CreateLoginUI.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Back.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Unit\ChangePosition_SyncGameObjectPos.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUISystem\LoopScrollRectDemo\LoopScrollVerticalViewComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Load\YIUILoadComponentSystem_GameObject.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Helper\TipsHelper_String.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\Factory\YIUIFactory_UI_Sync.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\YIUISystem\RedDot\RedDotStackItemComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\LoopScroll\YIUILoopScrollChildSystem_OnClick.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUISystem\GM\GMTypeItemComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILogin\UILoginComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\YIUISystem\Lobby\LobbyPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUIGen\LoopScrollRectDemo\LoopScrollVerticalViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Root.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\View\YIUIViewlComponentSystem_Open.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\GM\GM_Command_3DDisplay.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUIGen\GM\GMPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Initialize.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\EntryEvent3_InitClient.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Scene\AfterCreateCurrentScene_AddComponent.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\YIUIGen\Lobby\LobbyPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_Multiple.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Open\YIUIEventOpenHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Window\WindowFadeAnim.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUIGen\YIUI\YIUICloseCommonComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Tips\TipsViewComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeDestroyPanelHandler.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILogin\LoginFinish_RemoveLoginUI.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUISystem\LoopScrollRectDemo\LoopScrollRectDemoPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeLayerOptionHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_Async.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeCountDownHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUIGen\LoopScrollRectDemo\LoopScrollVerticalGroupViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUICountDown\CountDownMgrSystem_Main.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Close_Top.cs" />
     <Compile Include="Packages\cn.etetet.ui\Scripts\HotfixView\Client\UIGlobalComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUICountDown\CountDownMgrSystem_API.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Open.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUIGen\GM\GMCommandItemComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Open\YIUIEventCloseHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Root\YIUIRootComponentSystem_Open_WaitString.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\LoopScroll\YIUILoopScrollChildSystem_API.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_Open_Async.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUIGen\Tips\TipsMessageViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_OpenView_Async.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Plugins\Wait\YIUIWaitComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUIGen\Tips\TipsPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Helper\TipsHelper_Wait_String.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeReleaseHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\View\YIUIViewlComponentSystem_Close.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Helper\TipsHelper.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Opera\OperaComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Load\YIUILoadComponentSystem_Sync.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUISystem\YIUI\YIUICloseCommonComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUIGen\LoopScrollRectDemo\LoopScrollRectDemoItemComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\YIUIGen\RedDot\RedDotPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeGetHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Block.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeLoadHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\YIUISystem\Main\MainPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUISystem\GM\GMCommandItemComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeHomePanelHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\YIUISystem\Login\LoginPanelComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Unit\ChangeRotation_SyncGameObjectRotation.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Window\YIUIWindowComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuilocalization\Scripts\HotfixView\Client\YIUIInvokeI2Localization.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_API.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\GM\GM_Command_WaitTips.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\GM\GM_Command_Test.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUIGen\GM\GMParamItemComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Root\YIUIRootComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_Base.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUIGen\Tips\TipsTextViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_OpenWait.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Root\YIUIRootComponentSystem_OpenWait.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\Factory\YIUIFactory_Destroy.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Unit\GameObjectComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\Factory\YIUIFactory_Common.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_TimeDestroy.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_View.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Tips\TipsMessageViewComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.loader\Scripts\HotfixView\Client\GlobalComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUISystem\LoopScrollRectDemo\LoopScrollHorizontalViewComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUISystem\LoopScrollRectDemo\LoopScrollVerticalGroupViewComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\LoopScroll\YIUILoopScrollChildSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUIGen\GM\GMViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_Sync.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UIHelp\SceneChangeFinishEvent_CreateUIHelp.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiyooassets\Scripts\HotfixView\Client\YIUIYooAssetsLoadComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeClosePanelHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Load\YIUILoadComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Scene\SceneChangeStart_AddComponent.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Active.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\GM\GM_Command_Loop.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILobby\UILobbyComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\UI\UILogin\LoginFinish_RemoveLoginUI.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_Mono.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeTimerComponentHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\YIUIGen\ModelDisplay\ModelDisplayDemoViewComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUISystem\GM\GMPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\YIUISystem\ModelDisplay\ModelDisplayDemoViewComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\UI\UILobby\LoginFinish_CreateLobbyUI.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Common\YIUICommonComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiyooassets\Scripts\HotfixView\Client\YIUIFactory_YooAsset.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUICountDown\CountDownMgrSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\GM\YIUIEventInitializeAfterGMHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_OpenView_Async_String.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUIGen\GM\GMTypeItemComponentSystemGen.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILogin\UILoginEvent.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UIHelper.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Tips\TipsTextViewComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UILobby\LoginFinish_CreateLobbyUI.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\EntryEvent3_InitClient.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Root\YIUIRootComponentSystem_Open_String.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\YIUIGen\RedDot\RedDotDataItemComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Invoke\YIUIInvokeRootOpenPanelHandler.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Scene\AfterCreateClientScene_AddComponent.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUICountDown\CountDownMgrSystem_API_Callback.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Open_String.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\UI\UIHelp\SceneChangeFinishEvent_CreateUIHelp.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UI\YIUIChildSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\YIUISystem\LoopScrollRectDemo\LoopScrollRectDemoItemComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\UIMgr\YIUIMgrComponentSystem_Close.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\YIUISystem\Helper\TipsHelper_Wait.cs" />
+    <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\GM\GMCommandComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem_CloseView.cs" />
     <Compile Include="Packages\cn.etetet.ui\Scripts\HotfixView\Client\UIComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\UI\UIHelp\UIHelpEvent.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Root\YIUIRootComponentSystem_Open.cs" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem_Event.cs" />
+    <Compile Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\GM\GM_Command_Tips.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Event\Component\YIUIEventComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\LoopScroll\YIUILoopScrollChildSystem_Extend.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Unit\AfterUnitCreate_CreateUnitView.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\Unit\AnimatorComponentSystem.cs" />
-    <None Include="Packages\cn.etetet.ui\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\Display\YIUI3DDisplayChildSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Panel\YIUIPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Load\YIUILoadComponentSystem_Other.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\GM\GM_Command_RedDot.cs" />
+    <Compile Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\YIUISystem\RedDot\RedDotPanelComponentSystem.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiyooassets\Scripts\HotfixView\Client\YIUIInvokeYooAssetsHandler.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiyooassets\Scripts\HotfixView\Client\YIUILoadComponentSystem_YooAsset.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Load\YIUILoadComponentSystem_Async.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\YIUIGen\Main\MainPanelComponentSystemGen.cs" />
+    <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\View\YIUIViewlComponentSystem.cs" />
+    <None Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\AssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.statesync\Scripts\HotfixView\Client\AssemblyReference.asmref" />
-    <None Include="Packages\cn.etetet.yooassets\Scripts\HotfixView\Client\AssemblyReference.asmref" />
-    <None Include="Packages\cn.etetet.statesync\Runtime\HotfixView\ET.HotfixView.asmdef" />
+    <None Include="Packages\cn.etetet.yiuiyooassets\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.ui\Scripts\HotfixView\Client\AssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.loader\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuilocalization\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuireddot\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuitips\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.statesync\Runtime\HotfixView\ET.HotfixView.asmdef" />
+    <None Include="Packages\cn.etetet.yooassets\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.yiuiloopscrollrectasync\Scripts\HotfixView\Client\AssemblyReference.asmref" />
     <Reference Include="UnityEngine">
       <HintPath>D:\unity_editor\2022.3.17f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -317,17 +474,41 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\unity_editor\2022.3.17f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Reflection.Editor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.SharpZipLib">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Library\PackageCache\com.unity.sharp-zip-lib@1.3.4-preview\Runtime\Unity.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\SharpCompress.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Text.Encoding.CodePages">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.UIEffect.R">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuieffect\Plugins\UIEffect\Runtime\Coffee.UIEffect.R.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
@@ -341,14 +522,23 @@
     <Reference Include="LZ4">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.hybridclr\Plugins\LZ4.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Serialization.AOTGenerated">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\AOT\Sirenix.Serialization.AOTGenerated.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities.Editor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DnsClient">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.UIParticle.R">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuieffect\Plugins\UIParticle\Coffee.UIParticle.R.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\MongoDB.Libmongocrypt.dll</HintPath>
@@ -743,6 +933,9 @@
     <Reference Include="Unity.Mathematics">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -782,6 +975,10 @@
     <ProjectReference Include="ET.SourceGeneratorAttribute.csproj">
       <Project>{0b34b440-4029-9c0a-368e-1fa9dfd3f52b}</Project>
       <Name>ET.SourceGeneratorAttribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="ET.YIUIFramework.csproj">
+      <Project>{aca65dac-f2e3-73ba-8939-f16489707f7f}</Project>
+      <Name>ET.YIUIFramework</Name>
     </ProjectReference>
     <ProjectReference Include="ET.YooAssets.csproj">
       <Project>{9c59d913-4c98-6e0b-f2fe-2d8bcfcc5b2b}</Project>

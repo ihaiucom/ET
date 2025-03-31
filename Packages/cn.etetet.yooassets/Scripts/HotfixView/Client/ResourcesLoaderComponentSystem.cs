@@ -39,7 +39,10 @@ namespace ET.Client
                         handle.Release();
                         break;
                     case SceneHandle handle:
-                        handle.UnloadAsync();
+                        if (!handle.IsMainScene())
+                        {
+                            handle.UnloadAsync();
+                        }
                         break;
                 }
             }

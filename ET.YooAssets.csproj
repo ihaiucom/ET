@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>Temp\Bin\Debug\ET.YooAssets\</OutputPath>
-    <DefineConstants>UNITY_2022_3_17;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY;ENABLE_VIEW;INITED;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_17;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY;ENABLE_VIEW;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;DOTWEEN;TextMeshPro;INITED;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -41,206 +41,140 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuiframework\YIUI.BindSourceGenerator.dll" />
+    <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuiinvoke\YIUI.InvokeSourceGenerator.dll" />
     <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.sourcegenerator\ET.SourceGenerator.dll" />
     <Analyzer Include="D:\unity_editor\2022.3.17f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\unity_editor\2022.3.17f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.memorypack\Runtime\MemoryPack.Generator\MemoryPack.Generator.Roslyn3.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\DownloadDefine.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PackageBundle.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\VerifyCacheFilesOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\DestroyOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultUnpackFileSystem\DefaultUnpackRemoteServices.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\RequestPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\FileSystemParameters.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Elements\TempFileElement.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\PakcageInvokeBuilder\PakcageInvokeBuildResult.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\AssetBundleResult\Operation\AssetBundleLoadSceneOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSClearCacheFilesOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\DownloadManager.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\LoadEditorManifestOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\CompletedProvider.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\YooAssetsDriver.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Operation\Internal\UnityWebTextRequestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSLoadAllAssetsOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Requester\IWebRequester.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Interface\IBundleQuery.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSDownloadFileOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\BundledSceneProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Requester\FileGeneralRequest.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\UnityWebDataRequester.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ET\WebGLGameQueryServices.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\SceneHandle.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSLoadAssetOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IWebDecryptionServices.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\Internal\DownloadWebNormalAssetBundleOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\CatalogDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\SubAssetsProvider.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\ClearUnusedCacheBundleFilesOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\DebugOperationInfo.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\DWRFSInitializeOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\DBFSInitializeOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\internal\LoadEditorPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\internal\LoadEditorPackageHashOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\FileVerifyHelper.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\Internal\DownloadWebEncryptAssetBundleOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\QueryRemotePackageVersionOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PlayMode\WebPlayModeImpl.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PlayMode\OfflinePlayModeImpl.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Downloader\WebDownloader.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\RequestHelper.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\AssetInfo.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSLoadSubAssetsOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\ResourceLoader.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\RemoteDebuggerInRuntime.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\SceneProvider.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\ProviderOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\BundledSubAssetsProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\UnityWebFileRequester.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\AssetHandle.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\OperationSystem\GameAsyncOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\DownloadHandlerFileRange.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\AllAssetsHandle.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\RemoteEditorConnection.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\DEFSLoadPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\DefaultWebServerFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\DBFSLoadPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\internal\LoadWebServerCatalogFileOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\DCFSLoadPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\DWSFSLoadBundleOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\DWRFSLoadBundleOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\AssetBundleFileLoader.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Requester\AssetBundleWebRequest.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\EVerifyResult.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Utility\YooLogger.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\internal\RequestWebServerPackageHashOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Operation\UnloadSceneOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\SearchCacheFilesOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Downloader\CompletedDownloader.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\DatabaseAssetProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\EVerifyLevel.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\ResourceManager.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\RawBundleResult\Operation\RawBundleLoadSubAssetsOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\AssetBundleResult\Operation\AssetBundleLoadAllAssetsOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\QueryRemotePackageHashOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\UpdatePackageVersionOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PackageManifest.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ET\ResourcesComponent.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\DebugBundleInfo.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\internal\LoadWebServerPackageManifestOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\ManifestTools.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\YooConfig.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\internal\LoadEditorPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\Internal\DownloadAssetBundleOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\DownloadCenterOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\RawBundleResult\RawBundleResult.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\internal\RequestWebServerPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\RawBundleResult\Operation\RawBundleLoadAssetOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\AllAssetsProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ET\StreamingAssetsHelper\StreamingAssetsHelper.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\BundledAssetProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\LoadRemoteManifestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\ThreadSyncContext.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\DatabaseAllAssetsProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\CacheHelper.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\YooAssets.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\DefaultBuildinFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\DownloadResumeFileOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\LoadCachePackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\DefaultCacheFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\VirtualBundleResult\VirtualBundleResult.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\DatabaseSubAssetsProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\QueryCachePackageHashOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\DownloadManifestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Downloader\DownloaderBase.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\DebugReport.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\DebugPackageData.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\internal\LoadBuildinCatalogFileOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\RawFileProvider.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\internal\RequestBuildinPackageHashOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\internal\LoadBuildinPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\ClearCacheBundleFilesByTagsOperaiton.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSLoadBundleFileOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\YooAssetsExtension.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\EFileVerifyResult.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSInitializeFileSystemOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\ManifestDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Elements\VerifyFileElement.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\ApplicationFootPrint.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\VirtualBundleResult\Operation\VirtualBundleLoadAssetOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\VirtualBundleResult\Operation\VirtualBundleLoadAllAssetsOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\AssemblyInfo.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PlayMode\EditorSimulateModeHelper.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\DependAssetBundles.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Utility\BufferReader.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\DefaultEditorFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\RawBundleResult\Operation\RawBundleLoadAllAssetsOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\AssetBundleResult\AssetBundleResult.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\ResourcePackage.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PackageAsset.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Operation\Internal\UnityWebRequestOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IEncryptionServices.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\HandleFactory.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\ClearAllCacheManifestFilesOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultUnpackFileSystem\DefaultUnpackFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\VirtualBundleResult\Operation\VirtualBundleLoadSceneOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\DBFSLoadBundleOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\Internal\DownloadFileWrapper.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\DWSFSRequestPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\DownloadPackageHashOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\DefaultWebRemoteFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\BundleResult.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\EFileClearMode.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\DWRFSRequestPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\RequestRemotePackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\DefaultCacheFileSystemDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\AssetBundleResult\Operation\AssetBundleLoadAssetOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Elements\RecordFileElement.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\DEFSRequestPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\DefaultBuildinFileCatalog.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\internal\LoadWebRemotePackageManifestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PackageAsset.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\CacheFileInfo.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\UnpackBuildinManifestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\Operation\Internal\FindCacheFilesOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\QueryCachePackageVersionOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IDeliveryQueryServices.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\RemoteDebuggerDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Interface\IFileSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\internal\RequestWebRemotePackageHashOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\internal\RequestWebRemotePackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\EBuildBundleType.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\RawBundleResult\Operation\RawBundleLoadSceneOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebRemoteFileSystem\Operation\DWRFSLoadPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\RemotePlayerConnection.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\AssetBundleResult\Operation\AssetBundleLoadSubAssetsOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\DownloadStatus.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\DCFSLoadBundleOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Operation\UnloadUnusedAssetsOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\RawBundleWebLoader.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Requester\FileResumeRequest.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Downloader\FileDownloader.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\ProviderBase.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Settings\YooAssetSettings.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\Assembly\AssemblyInfo.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\FileSystemParametersDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\WebRequestCounter.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\PakcageInvokeBuilder\PakcageInvokeBuilder.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\DefaultEditorFileSystemDefine.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IDecryptionServices.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\DownloadNormalFileOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSQueryPackageVersionOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\VirtualBundleFileLoader.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\InitializationOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSLoadSceneOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\ClearCacheFilesOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\OperationSystem\OperationSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\DWSFSInitializeOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Settings\YooAssetSettingsData.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\RawFileHandle.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\DBFSRequestPackageVersionOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Interface\IPlayMode.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\Operation\ClearAllCacheFilesOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\LoadCacheManifestOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Operation\InstantiateOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\PakcageInvokeBuilder\PakcageInvokeBuildParam.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ET\StreamingAssetsHelper\StreamingAssetsDefine.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\CacheManager.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\DownloaderOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PlayMode\PlayModeImpl.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\EFileVerifyLevel.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\BundledRawFileProvider.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\SubAssetsHandle.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\DownloadSystemHelper.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Operation\UnloadAllAssetsOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\CatalogTools.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Operation\Internal\UnityWebFileRequestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\AssetBundleWebLoader.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ET\StreamingAssetsHelper\BuildinFileManifest.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\VerifyElement.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\BundleLoaderBase.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Requester\DownloadHandlerFileRange.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\DeserializeManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\internal\RequestBuildinPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\AssetProvider.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\DownloadPackageManifestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\BundledAllAssetsProvider.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\UpdatePackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\Operation\internal\CopyBuildinPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\FSLoadPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\Operation\Internal\UnityWebDataRequestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PackageDetail.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultUnpackFileSystem\DefaultUnpackFileSystemDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\DefaultBuildinFileSystemDefine.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\BundleResult\VirtualBundleResult\Operation\VirtualBundleLoadSubAssetsOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\OperationSystem\AsyncOperationBase.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\PersistentHelper.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\QueryBuildinPackageVersionOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\DownloadStatus.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Utility\YooUtility.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Operation\Internal\LoadBundleFileOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\OperationSystem\AsyncOperationBase.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\Operation\Internal\VerifyTempFileOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IRemoteServices.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\DEFSLoadBundleOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IBuildinQueryServices.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\UnityWebRequesterBase.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\DebugProviderInfo.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Utility\CRC32Algorithm.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PlayMode\EditorSimulateModeImpl.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Handle\HandleBase.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\Operation\ClearUnusedCacheFilesOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\DatabaseSceneProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Loader\RawBundleFileLoader.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\DiagnosticSystem\RemoteCommand.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\Operation\Internal\DefaultDownloadFileOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\PersistentManager.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\ResourceAssist.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\DownloadHelper.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\OperationSystem\EOperationStatus.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\Operation\PackageCachingOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\PreDownloadContentOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\LoadCachePackageHashOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\DCFSRequestPackageVersionOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\VerifyTempFileOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultEditorFileSystem\Operation\DEFSInitializeOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\ClearAllCacheBundleFilesOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\DownloadSystem\DownloadParam.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultWebServerFileSystem\Operation\DWSFSLoadPackageManifestOperation.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultBuildinFileSystem\DefaultBuildinFileSystemBuild.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\DCFSInitializeOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\PlayMode\HostPlayModeImpl.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\CacheSystem\Operation\Internal\VerifyCacheFilesOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\Utility\BufferWriter.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourceManager\Provider\DatabaseRawFileProvider.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\Operation\Internal\LoadBuildinManifestOperation.cs" />
+    <Compile Include="Packages\cn.etetet.yooassets\Runtime\Services\IDeliveryLoadServices.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\InitializeParameters.cs" />
-    <Compile Include="Packages\cn.etetet.yooassets\Runtime\FileSystem\DefaultCacheFileSystem\Operation\internal\ClearUnusedCacheManifestFilesOperation.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Runtime\ResourcePackage\BundleInfo.cs" />
     <None Include="Packages\cn.etetet.yooassets\Runtime\ET.YooAssets.asmdef" />
     <Reference Include="UnityEngine">
@@ -495,17 +429,44 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\unity_editor\2022.3.17f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Reflection.Editor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.SharpZipLib">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Library\PackageCache\com.unity.sharp-zip-lib@1.3.4-preview\Runtime\Unity.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\SharpCompress.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Text.Encoding.CodePages">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.UIEffect.R">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuieffect\Plugins\UIEffect\Runtime\Coffee.UIEffect.R.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
@@ -519,14 +480,26 @@
     <Reference Include="LZ4">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.hybridclr\Plugins\LZ4.dll</HintPath>
     </Reference>
+    <Reference Include="Sirenix.Serialization.AOTGenerated">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\AOT\Sirenix.Serialization.AOTGenerated.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS_I2Loc.Xcode">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuilocalization\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities.Editor">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuistatesync\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DnsClient">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.UIParticle.R">
+      <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\cn.etetet.yiuieffect\Plugins\UIParticle\Coffee.UIParticle.R.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>E:\zengfeng\githubs\ET9\ET\Packages\com.etetet.init\Plugins\MongoDB\MongoDB.Libmongocrypt.dll</HintPath>

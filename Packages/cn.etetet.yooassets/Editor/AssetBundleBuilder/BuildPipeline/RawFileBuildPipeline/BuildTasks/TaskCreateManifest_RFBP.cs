@@ -9,12 +9,12 @@ namespace YooAsset.Editor
     {
         void IBuildTask.Run(BuildContext context)
         {
-            CreateManifestFile(false, true, context);
+            CreateManifestFile(context);
         }
 
         protected override string[] GetBundleDepends(BuildContext context, string bundleName)
         {
-            return Array.Empty<string>();
+            return new string[] { };
         }
     }
 }

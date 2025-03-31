@@ -13,11 +13,6 @@ namespace YooAsset
     internal class DebugReport
     {
         /// <summary>
-        /// 调试器版本
-        /// </summary>
-        public string DebuggerVersion = RemoteDebuggerDefine.DebuggerVersion;
-
-        /// <summary>
         /// 游戏帧
         /// </summary>
         public int FrameCount;
@@ -26,6 +21,7 @@ namespace YooAsset
         /// 调试的包裹数据列表
         /// </summary>
         public List<DebugPackageData> PackageDatas = new List<DebugPackageData>(10);
+
 
         /// <summary>
         /// 序列化

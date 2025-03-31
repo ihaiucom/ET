@@ -46,12 +46,12 @@ namespace HybridCLR.Editor.BuildProcessors
                 return;
             }
             BuildTargetGroup buildTargetGroup = BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget);
-            ScriptingImplementation curScriptingImplementation = PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(buildTargetGroup));
+            ScriptingImplementation curScriptingImplementation = PlayerSettings.GetScriptingBackend(buildTargetGroup);
             ScriptingImplementation targetScriptingImplementation = ScriptingImplementation.IL2CPP;
             if (curScriptingImplementation != targetScriptingImplementation)
             {
                 Debug.LogError($"[CheckSettings] current ScriptingBackend:{curScriptingImplementation}，have been switched to:{targetScriptingImplementation} automatically");
-                PlayerSettings.SetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(buildTargetGroup), targetScriptingImplementation);
+                PlayerSettings.SetScriptingBackend(buildTargetGroup, targetScriptingImplementation);
             }
 
             var installer = new Installer.InstallerController();

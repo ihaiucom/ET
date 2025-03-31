@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "4d9b9cbb17c888c88e786ef199731bef7625592c"
+  }
 }

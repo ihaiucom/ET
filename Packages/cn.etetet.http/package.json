@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.http",
   "displayName": "ET.Http",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "176bb8583a35ddfdb8c4cfa7371a5b5906c4bb81"
+  }
 }

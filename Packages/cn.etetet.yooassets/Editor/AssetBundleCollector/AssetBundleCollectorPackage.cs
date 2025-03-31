@@ -36,14 +36,14 @@ namespace YooAsset.Editor
         public bool IncludeAssetGUID = false;
 
         /// <summary>
+        /// 忽略Unity引擎无法识别的文件
+        /// </summary>
+        public bool IgnoreDefaultType = true;
+
+        /// <summary>
         /// 自动收集所有着色器（所有着色器存储在一个资源包内）
         /// </summary>
         public bool AutoCollectShaders = true;
-
-        /// <summary>
-        /// 资源忽略规则名
-        /// </summary>
-        public string IgnoreRuleName = nameof(NormalIgnoreRule);
 
         /// <summary>
         /// 分组列表
@@ -56,16 +56,6 @@ namespace YooAsset.Editor
         /// </summary>
         public void CheckConfigError()
         {
-            if (string.IsNullOrEmpty(IgnoreRuleName))
-            {
-                throw new Exception($"{nameof(IgnoreRuleName)} is null or empty !");
-            }
-            else
-            {
-                if (AssetBundleCollectorSettingData.HasIgnoreRuleName(IgnoreRuleName) == false)
-                    throw new Exception($"Invalid {nameof(IIgnoreRule)} class type : {IgnoreRuleName} in package : {PackageName}");
-            }
-
             foreach (var group in Groups)
             {
                 group.CheckConfigError();
@@ -78,14 +68,6 @@ namespace YooAsset.Editor
         public bool FixConfigError()
         {
             bool isFixed = false;
-
-            if (string.IsNullOrEmpty(IgnoreRuleName))
-            {
-                Debug.LogWarning($"Set the {nameof(IgnoreRuleName)} to {nameof(NormalIgnoreRule)}");
-                IgnoreRuleName = nameof(NormalIgnoreRule);
-                isFixed = true;
-            }
-
             foreach (var group in Groups)
             {
                 if (group.FixConfigError())
@@ -93,14 +75,13 @@ namespace YooAsset.Editor
                     isFixed = true;
                 }
             }
-
             return isFixed;
         }
 
         /// <summary>
-        /// 获取收集的资源列表
+        /// 获取打包收集的资源文件
         /// </summary>
-        public List<CollectAssetInfo> GetCollectAssets(CollectCommand command)
+        public List<CollectAssetInfo> GetAllCollectAssets(CollectCommand command)
         {
             Dictionary<string, CollectAssetInfo> result = new Dictionary<string, CollectAssetInfo>(10000);
 
@@ -138,7 +119,7 @@ namespace YooAsset.Editor
                 }
             }
 
-            // 返回结果
+            // 返回列表
             return result.Values.ToList();
         }
 

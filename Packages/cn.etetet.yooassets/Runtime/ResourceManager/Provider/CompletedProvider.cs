@@ -1,18 +1,25 @@
 ﻿
 namespace YooAsset
 {
-    internal sealed class CompletedProvider : ProviderOperation
+    internal sealed class CompletedProvider : ProviderBase
     {
-        public CompletedProvider(ResourceManager manager, AssetInfo assetInfo) : base(manager, string.Empty, assetInfo)
-        {
-        }
-        protected override void ProcessBundleResult()
+        public CompletedProvider(AssetInfo assetInfo) : base(null, string.Empty, assetInfo)
         {
         }
 
-        public void SetCompletedWithError(string error)
+        internal override void InternalOnStart()
         {
-            InvokeCompletion(error, EOperationStatus.Failed);
+        }
+        internal override void InternalOnUpdate()
+        {
+        }
+
+        public void SetCompleted(string error)
+        {
+            if (_steps == ESteps.None)
+            {
+                InvokeCompletion(error, EOperationStatus.Failed);
+            }
         }
     }
 }

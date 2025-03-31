@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.watcher",
   "displayName": "ET.Watcher",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "4ab9359b8a3c2d2a683e18003d267af4d7d8b8a2"
+  }
 }

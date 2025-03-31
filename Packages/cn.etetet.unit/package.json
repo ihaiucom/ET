@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.unit",
   "displayName": "ET.Unit",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "45e19f78a940dac3fb1dbb221991acfecec12620"
+  }
 }

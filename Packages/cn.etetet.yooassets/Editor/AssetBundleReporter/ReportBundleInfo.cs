@@ -44,21 +44,14 @@ namespace YooAsset.Editor
         public string[] Tags;
 
         /// <summary>
-        /// 依赖的资源包集合
-        /// 说明：引擎层构建查询结果
+        /// 资源包的依赖集合
         /// </summary>
-        public List<string> DependBundles = new List<string>();
+        public List<string> DependBundles;
 
         /// <summary>
-        /// 引用该资源包的资源包集合
-        /// 说明：谁依赖该资源包
+        /// 该资源包内包含的所有资源
         /// </summary>
-        public List<string> ReferenceBundles = new List<string>();
-
-        /// <summary>
-        /// 资源包内部所有资产
-        /// </summary>
-        public List<AssetInfo> BundleContents = new List<AssetInfo>();
+        public List<string> AllBuiltinAssets = new List<string>();
 
         /// <summary>
         /// 获取资源分类标签的字符串

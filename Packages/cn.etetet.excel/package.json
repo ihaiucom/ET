@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.excel",
   "displayName": "ET.Excel",
   "version": "3.0.0",
@@ -16,6 +16,5 @@
   "dependencies": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "7028969a79053b208d8cfc4e2ed677c2885101eb"
+  }
 }

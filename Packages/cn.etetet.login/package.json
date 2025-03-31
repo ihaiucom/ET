@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.login",
   "displayName": "ET.Login",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "9fa303820b3f19ce42e6ba11b60d78c711e8e6c4"
+  }
 }

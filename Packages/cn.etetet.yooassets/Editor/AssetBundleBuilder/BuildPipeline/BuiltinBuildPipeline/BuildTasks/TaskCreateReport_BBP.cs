@@ -13,7 +13,12 @@ namespace YooAsset.Editor
             var buildParameters = context.GetContextObject<BuildParametersContext>();
             var buildMapContext = context.GetContextObject<BuildMapContext>();
             var manifestContext = context.GetContextObject<ManifestContext>();
-            CreateReportFile(buildParameters, buildMapContext, manifestContext);
+
+            var buildMode = buildParameters.Parameters.BuildMode;
+            if (buildMode != EBuildMode.SimulateBuild)
+            {
+                CreateReportFile(buildParameters, buildMapContext, manifestContext);
+            }
         }
     }
 }

@@ -13,9 +13,13 @@ namespace YooAsset.Editor
             var buildParametersContext = context.GetContextObject<BuildParametersContext>();
             var buildParameters = buildParametersContext.Parameters;
             var manifestContext = context.GetContextObject<ManifestContext>();
-            if (buildParameters.BuildinFileCopyOption != EBuildinFileCopyOption.None)
+
+            if (buildParameters.BuildMode != EBuildMode.SimulateBuild)
             {
-                CopyBuildinFilesToStreaming(buildParametersContext, manifestContext.Manifest);
+                if (buildParameters.BuildinFileCopyOption != EBuildinFileCopyOption.None)
+                {
+                    CopyBuildinFilesToStreaming(buildParametersContext, manifestContext.Manifest);
+                }
             }
         }
     }

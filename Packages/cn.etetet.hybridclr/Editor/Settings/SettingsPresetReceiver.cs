@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace HybridCLR.Editor.Settings
 {
-    public class SettingsPresetReceiver : ScriptableObject
+    public class SettingsPresetReceiver : PresetSelectorReceiver
     {
         private Object m_Target;
         private Preset m_InitialValue;
@@ -16,7 +16,7 @@ namespace HybridCLR.Editor.Settings
             m_InitialValue = new Preset(target);
             m_Provider = provider;
         }
-        public void OnSelectionChanged(Preset selection)
+        public override void OnSelectionChanged(Preset selection)
         {
             if (selection != null)
             {
@@ -30,7 +30,7 @@ namespace HybridCLR.Editor.Settings
             }
             m_Provider.Repaint();
         }
-        public void OnSelectionClosed(Preset selection)
+        public override void OnSelectionClosed(Preset selection)
         {
             OnSelectionChanged(selection);
             Object.DestroyImmediate(this);

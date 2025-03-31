@@ -3,6 +3,6 @@ namespace YooAsset.Editor
 {
     public interface IBuildPipeline
     {
-        BuildResult Run(BuildParameters buildParameters, bool enableLog);
+        public BuildResult Run(BuildParameters buildParameters, bool enableLog);
     }
 }

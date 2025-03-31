@@ -9,13 +9,17 @@ namespace YooAsset.Editor
         {
             var buildParameters = context.GetContextObject<BuildParametersContext>();
             var buildMapContext = context.GetContextObject<BuildMapContext>();
-            CreatePackagePatch(buildParameters, buildMapContext);
+            var buildMode = buildParameters.Parameters.BuildMode;
+            if (buildMode != EBuildMode.SimulateBuild)
+            {
+                CreatePackageCatalog(buildParameters, buildMapContext);
+            }
         }
 
         /// <summary>
         /// 拷贝补丁文件到补丁包目录
         /// </summary>
-        private void CreatePackagePatch(BuildParametersContext buildParametersContext, BuildMapContext buildMapContext)
+        private void CreatePackageCatalog(BuildParametersContext buildParametersContext, BuildMapContext buildMapContext)
         {
             string packageOutputDirectory = buildParametersContext.GetPackageOutputDirectory();
             BuildLogger.Log($"Start making patch package: {packageOutputDirectory}");

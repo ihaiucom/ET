@@ -11,15 +11,8 @@ namespace YooAsset.Editor
     {
         public BuildResult Run(BuildParameters buildParameters, bool enableLog)
         {
-            if (buildParameters is RawFileBuildParameters)
-            {
-                AssetBundleBuilder builder = new AssetBundleBuilder();
-                return builder.Run(buildParameters, GetDefaultBuildPipeline(), enableLog);
-            }
-            else
-            {
-                throw new Exception($"Invalid build parameter type : {buildParameters.GetType().Name}");
-            }
+            AssetBundleBuilder builder = new AssetBundleBuilder();
+            return builder.Run(buildParameters, GetDefaultBuildPipeline(), enableLog);
         }
 
         /// <summary>
@@ -32,13 +25,11 @@ namespace YooAsset.Editor
                     new TaskPrepare_RFBP(),
                     new TaskGetBuildMap_RFBP(),
                     new TaskBuilding_RFBP(),
-                    new TaskEncryption_RFBP(),
                     new TaskUpdateBundleInfo_RFBP(),
                     new TaskCreateManifest_RFBP(),
                     new TaskCreateReport_RFBP(),
                     new TaskCreatePackage_RFBP(),
                     new TaskCopyBuildinFiles_RFBP(),
-                    new TaskCreateCatalog_RFBP()
                 };
             return pipeline;
         }

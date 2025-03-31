@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.numeric",
   "displayName": "ET.Numeric",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "31b6aad0def44c07b1ea70c34d42c73e1f05d977"
+  }
 }

@@ -3,36 +3,17 @@ using System.Collections;
 
 namespace YooAsset
 {
-    public abstract class HandleBase : IEnumerator, IDisposable
+    public abstract class HandleBase : IEnumerator
     {
         private readonly AssetInfo _assetInfo;
-        internal ProviderOperation Provider { private set; get; }
+        internal ProviderBase Provider { private set; get; }
 
-        internal HandleBase(ProviderOperation provider)
+        internal HandleBase(ProviderBase provider)
         {
             Provider = provider;
             _assetInfo = provider.MainAssetInfo;
         }
         internal abstract void InvokeCallback();
-
-        /// <summary>
-        /// 释放资源句柄
-        /// </summary>
-        public void Release()
-        {
-            if (IsValidWithWarning == false)
-                return;
-            Provider.ReleaseHandle(this);
-            Provider = null;
-        }
-
-        /// <summary>
-        /// 释放资源句柄
-        /// </summary>
-        public void Dispose()
-        {
-            this.Release();
-        }
 
         /// <summary>
         /// 获取资源信息
@@ -48,7 +29,9 @@ namespace YooAsset
         public DownloadStatus GetDownloadStatus()
         {
             if (IsValidWithWarning == false)
+            {
                 return DownloadStatus.CreateDefaultStatus();
+            }
             return Provider.GetDownloadStatus();
         }
 
@@ -61,6 +44,7 @@ namespace YooAsset
             {
                 if (IsValidWithWarning == false)
                     return EOperationStatus.None;
+
                 return Provider.Status;
             }
         }
@@ -99,7 +83,7 @@ namespace YooAsset
             get
             {
                 if (IsValidWithWarning == false)
-                    return true;
+                    return false;
                 return Provider.IsDone;
             }
         }
@@ -140,18 +124,24 @@ namespace YooAsset
             }
         }
 
+        /// <summary>
+        /// 释放句柄
+        /// </summary>
+        internal void ReleaseInternal()
+        {
+            if (IsValidWithWarning == false)
+                return;
+            Provider.ReleaseHandle(this);
+            Provider = null;
+        }
+
         #region 异步操作相关
         /// <summary>
         /// 异步操作任务
         /// </summary>
         public System.Threading.Tasks.Task Task
         {
-            get 
-            {
-                if (IsValidWithWarning == false)
-                    return null;
-                return Provider.Task; 
-            }
+            get { return Provider.Task; }
         }
 
         // 协程相关

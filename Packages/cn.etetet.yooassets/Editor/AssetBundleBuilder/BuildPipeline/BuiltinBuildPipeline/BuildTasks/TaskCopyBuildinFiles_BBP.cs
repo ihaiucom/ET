@@ -12,9 +12,14 @@ namespace YooAsset.Editor
         {
             var buildParametersContext = context.GetContextObject<BuildParametersContext>();
             var manifestContext = context.GetContextObject<ManifestContext>();
-            if (buildParametersContext.Parameters.BuildinFileCopyOption != EBuildinFileCopyOption.None)
+            var buildMode = buildParametersContext.Parameters.BuildMode;
+
+            if (buildMode == EBuildMode.ForceRebuild || buildMode == EBuildMode.IncrementalBuild)
             {
-                CopyBuildinFilesToStreaming(buildParametersContext, manifestContext.Manifest);
+                if (buildParametersContext.Parameters.BuildinFileCopyOption != EBuildinFileCopyOption.None)
+                {
+                    CopyBuildinFilesToStreaming(buildParametersContext, manifestContext.Manifest);
+                }
             }
         }
     }

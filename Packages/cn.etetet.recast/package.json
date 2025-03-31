@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.recast",
   "displayName": "ET.Recast",
   "version": "3.0.0",
@@ -16,6 +16,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
   },
-  "dependencies": {},
-  "_fingerprint": "e1555297129dc10709d8ec2e7b6493be36751957"
+  "dependencies": {}
 }

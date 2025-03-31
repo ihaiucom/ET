@@ -12,41 +12,31 @@ namespace YooAsset
         {
             None,
             CheckError,
-            WaitDone,
+            PrepareDone,
             UnLoadScene,
+            Checking,
             Done,
         }
 
         private ESteps _steps = ESteps.None;
         private readonly string _error;
-        private readonly ProviderOperation _provider;
-        private AsyncOperation _asyncOp = null;
+        private readonly ProviderBase _provider;
+        private AsyncOperation _asyncOp;
 
         internal UnloadSceneOperation(string error)
         {
             _error = error;
         }
-        internal UnloadSceneOperation(ProviderOperation provider)
+        internal UnloadSceneOperation(ProviderBase provider)
         {
             _error = null;
             _provider = provider;
-
-            // 注意：卸载场景前必须先解除挂起操作
-            if (provider is SceneProvider)
-            {
-                var temp = provider as SceneProvider;
-                temp.UnSuspendLoad();
-            }
-            else
-            {
-                throw new System.NotImplementedException();
-            }
         }
-        internal override void InternalStart()
+        internal override void InternalOnStart()
         {
             _steps = ESteps.CheckError;
         }
-        internal override void InternalUpdate()
+        internal override void InternalOnUpdate()
         {
             if (_steps == ESteps.None || _steps == ESteps.Done)
                 return;
@@ -61,10 +51,10 @@ namespace YooAsset
                     return;
                 }
 
-                _steps = ESteps.WaitDone;
+                _steps = ESteps.PrepareDone;
             }
 
-            if (_steps == ESteps.WaitDone)
+            if (_steps == ESteps.PrepareDone)
             {
                 if (_provider.IsDone == false)
                     return;
@@ -90,18 +80,14 @@ namespace YooAsset
 
             if (_steps == ESteps.UnLoadScene)
             {
-                if (_asyncOp == null)
-                {
-                    _asyncOp = SceneManager.UnloadSceneAsync(_provider.SceneObject);
-                    if (_asyncOp == null)
-                    {
-                        _steps = ESteps.Done;
-                        Status = EOperationStatus.Failed;
-                        Error = "Unload scene failed, see the console logs !";
-                        return;
-                    }
-                }
+                _asyncOp = SceneManager.UnloadSceneAsync(_provider.SceneObject);
+                _provider.ResourceMgr.UnloadSubScene(_provider.SceneName);
+                _provider.ResourceMgr.TryUnloadUnusedAsset(_provider.MainAssetInfo);
+                _steps = ESteps.Checking;
+            }
 
+            if (_steps == ESteps.Checking)
+            {
                 Progress = _asyncOp.progress;
                 if (_asyncOp.isDone == false)
                     return;
@@ -109,10 +95,6 @@ namespace YooAsset
                 _steps = ESteps.Done;
                 Status = EOperationStatus.Succeed;
             }
-        }
-        internal override string InternalGetDesc()
-        {
-            return $"SceneName : {_provider.SceneName}";
         }
     }
 }

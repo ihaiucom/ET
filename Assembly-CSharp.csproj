@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Packages\cn.etetet.yiuiframework\package.json" />
     <None Include="Packages\com.halodi.halodi-unity-package-registry-manager\package.json" />
     <None Include="Packages\cn.etetet.hybridclr\packagegit.json" />
     <None Include="Packages\com.unity.ide.rider\package.json" />
@@ -50,13 +51,17 @@
     <None Include="Packages\cn.etetet.sourcegenerator\package.json" />
     <None Include="Packages\cn.etetet.demores\package.json" />
     <None Include="Packages\cn.etetet.referencecollector\packagegit.json" />
+    <None Include="Assets\GameRes\YIUI\YIUIConstAsset.txt" />
     <None Include="Packages\cn.etetet.mathematics\package.json" />
     <None Include="Packages\cn.etetet.sourcegenerator\packagegit.json" />
     <None Include="Assets\link.xml" />
     <None Include="Packages\cn.etetet.mathematics\packagegit.json" />
     <None Include="Packages\com.etetet.init\package.json" />
+    <None Include="Packages\cn.etetet.yiuiinvoke\packagegit.json" />
     <None Include="Packages\cn.etetet.memorypack\packagegit.json" />
     <None Include="Packages\cn.etetet.hybridclr\package.json" />
+    <None Include="Packages\cn.etetet.yiuiframework\packagegit.json" />
+    <None Include="Packages\cn.etetet.yiuiinvoke\package.json" />
     <Reference Include="UnityEngine">
       <HintPath>D:\unity_editor\2022.3.17f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

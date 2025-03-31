@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.move",
   "displayName": "ET.Move",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "ba98eab87085be42c947f9f350fed388bec33e04"
+  }
 }

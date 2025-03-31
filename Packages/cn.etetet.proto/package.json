@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.proto",
   "displayName": "ET.Proto",
-  "version": "3.0.2",
+  "version": "3.0.1",
   "unity": "2022.3",
   "description": "proto2cs工具，用于把proto文件导出成C#",
   "author": {
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "f57403ab7e1b33388e97afd8988628cdb0bd5c44"
+  }
 }

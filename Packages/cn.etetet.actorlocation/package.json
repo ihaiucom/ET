@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "cn.etetet.actorlocation",
   "displayName": "ET.ActorLocation",
   "version": "3.0.0",
@@ -15,6 +15,5 @@
   "relatedPackages": {},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "652d22135aafeb754f1996077d0c0d611ed2dc12"
+  }
 }

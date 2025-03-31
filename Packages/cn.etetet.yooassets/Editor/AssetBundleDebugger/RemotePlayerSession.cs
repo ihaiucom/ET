@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace YooAsset.Editor
 {
     internal class RemotePlayerSession
     {
-        private readonly Queue<DebugReport> _reports = new Queue<DebugReport>();
+        private readonly List<DebugReport> _reportList = new List<DebugReport>();
 
         /// <summary>
         /// 用户ID
@@ -30,7 +29,7 @@ namespace YooAsset.Editor
         {
             get
             {
-                int index = _reports.Count - 1;
+                int index = _reportList.Count - 1;
                 if (index < 0)
                     index = 0;
                 return index;
@@ -38,7 +37,7 @@ namespace YooAsset.Editor
         }
 
 
-        public RemotePlayerSession(int playerId, int maxReportCount = 500)
+        public RemotePlayerSession(int playerId, int maxReportCount = 1000)
         {
             PlayerId = playerId;
             MaxReportCount = maxReportCount;
@@ -49,7 +48,7 @@ namespace YooAsset.Editor
         /// </summary>
         public void ClearDebugReport()
         {
-            _reports.Clear();
+            _reportList.Clear();
         }
 
         /// <summary>
@@ -60,9 +59,9 @@ namespace YooAsset.Editor
             if (report == null)
                 Debug.LogWarning("Invalid debug report data !");
 
-            if (_reports.Count >= MaxReportCount)
-                _reports.Dequeue();
-            _reports.Enqueue(report);
+            if (_reportList.Count >= MaxReportCount)
+                _reportList.RemoveAt(0);
+            _reportList.Add(report);
         }
 
         /// <summary>
@@ -70,11 +69,11 @@ namespace YooAsset.Editor
         /// </summary>
         public DebugReport GetDebugReport(int rangeIndex)
         {
-            if (_reports.Count == 0)
+            if (_reportList.Count == 0)
                 return null;
-            if (rangeIndex < 0 || rangeIndex >= _reports.Count)
+            if (rangeIndex < 0 || rangeIndex >= _reportList.Count)
                 return null;
-            return _reports.ElementAt(rangeIndex);
+            return _reportList[rangeIndex];
         }
 
         /// <summary>

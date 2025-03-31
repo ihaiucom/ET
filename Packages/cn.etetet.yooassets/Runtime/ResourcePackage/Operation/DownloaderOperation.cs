@@ -15,36 +15,20 @@ namespace YooAsset
 
         private const int MAX_LOADER_COUNT = 64;
 
-        #region 委托定义
-        /// <summary>
-        /// 下载器结束
-        /// </summary>
-        public delegate void DownloaderFinish(DownloaderFinishData data);
+        public delegate void OnDownloadOver(bool isSucceed);
+        public delegate void OnDownloadProgress(int totalDownloadCount, int currentDownloadCount, long totalDownloadBytes, long currentDownloadBytes);
+        public delegate void OnDownloadError(string fileName, string error);
+        public delegate void OnStartDownloadFile(string fileName, long sizeBytes);
 
-        /// <summary>
-        /// 下载进度更新
-        /// </summary>
-        public delegate void DownloadUpdate(DownloadUpdateData data);
-
-        /// <summary>
-        /// 下载发生错误
-        /// </summary>
-        public delegate void DownloadError(DownloadErrorData data);
-
-        /// <summary>
-        /// 开始下载某个文件
-        /// </summary>
-        public delegate void DownloadFileBegin(DownloadFileData data);
-        #endregion
-
+        private readonly DownloadManager _downloadMgr;
         private readonly string _packageName;
         private readonly int _downloadingMaxNumber;
         private readonly int _failedTryAgain;
         private readonly int _timeout;
         private readonly List<BundleInfo> _bundleInfoList;
-        private readonly List<FSDownloadFileOperation> _downloaders = new List<FSDownloadFileOperation>(MAX_LOADER_COUNT);
-        private readonly List<FSDownloadFileOperation> _removeList = new List<FSDownloadFileOperation>(MAX_LOADER_COUNT);
-        private readonly List<FSDownloadFileOperation> _failedList = new List<FSDownloadFileOperation>(MAX_LOADER_COUNT);
+        private readonly List<DownloaderBase> _downloaders = new List<DownloaderBase>(MAX_LOADER_COUNT);
+        private readonly List<DownloaderBase> _removeList = new List<DownloaderBase>(MAX_LOADER_COUNT);
+        private readonly List<DownloaderBase> _failedList = new List<DownloaderBase>(MAX_LOADER_COUNT);
 
         // 数据相关
         private bool _isPause = false;
@@ -84,26 +68,27 @@ namespace YooAsset
         /// <summary>
         /// 当下载器结束（无论成功或失败）
         /// </summary>
-        public DownloaderFinish DownloadFinishCallback { set; get; }
+        public OnDownloadOver OnDownloadOverCallback { set; get; }
 
         /// <summary>
         /// 当下载进度发生变化
         /// </summary>
-        public DownloadUpdate DownloadUpdateCallback { set; get; }
+        public OnDownloadProgress OnDownloadProgressCallback { set; get; }
 
         /// <summary>
-        /// 当下载器发生错误
+        /// 当某个文件下载失败
         /// </summary>
-        public DownloadError DownloadErrorCallback { set; get; }
+        public OnDownloadError OnDownloadErrorCallback { set; get; }
 
         /// <summary>
         /// 当开始下载某个文件
         /// </summary>
-        public DownloadFileBegin DownloadFileBeginCallback { set; get; }
+        public OnStartDownloadFile OnStartDownloadFileCallback { set; get; }
 
 
-        internal DownloaderOperation(string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
+        internal DownloaderOperation(DownloadManager downloadMgr, string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
         {
+            _downloadMgr = downloadMgr;
             _packageName = packageName;
             _bundleInfoList = downloadList;
             _downloadingMaxNumber = UnityEngine.Mathf.Clamp(downloadingMaxNumber, 1, MAX_LOADER_COUNT); ;
@@ -116,12 +101,12 @@ namespace YooAsset
             // 统计下载信息
             CalculatDownloaderInfo();
         }
-        internal override void InternalStart()
+        internal override void InternalOnStart()
         {
-            YooLogger.Log($"Begine to download {TotalDownloadCount} files and {TotalDownloadBytes} bytes");
+            YooLogger.Log($"Begine to download : {TotalDownloadCount} files and {TotalDownloadBytes} bytes");
             _steps = ESteps.Check;
         }
-        internal override void InternalUpdate()
+        internal override void InternalOnUpdate()
         {
             if (_steps == ESteps.None || _steps == ESteps.Done)
                 return;
@@ -147,13 +132,12 @@ namespace YooAsset
                 long downloadBytes = _cachedDownloadBytes;
                 foreach (var downloader in _downloaders)
                 {
-                    downloader.UpdateOperation();
-                    downloadBytes += downloader.DownloadedBytes;
-                    if (downloader.IsDone == false)
+                    downloadBytes += (long)downloader.DownloadedBytes;
+                    if (downloader.IsDone() == false)
                         continue;
 
                     // 检测是否下载失败
-                    if (downloader.Status != EOperationStatus.Succeed)
+                    if (downloader.HasError())
                     {
                         _removeList.Add(downloader);
                         _failedList.Add(downloader);
@@ -163,13 +147,13 @@ namespace YooAsset
                     // 下载成功
                     _removeList.Add(downloader);
                     _cachedDownloadCount++;
-                    _cachedDownloadBytes += downloader.DownloadedBytes;
+                    _cachedDownloadBytes += downloader.GetDownloadFileSize();
                 }
 
                 // 移除已经完成的下载器（无论成功或失败）
-                foreach (var downloader in _removeList)
+                foreach (var loader in _removeList)
                 {
-                    _downloaders.Remove(downloader);
+                    _downloaders.Remove(loader);
                 }
 
                 // 如果下载进度发生变化
@@ -178,18 +162,7 @@ namespace YooAsset
                     _lastDownloadBytes = downloadBytes;
                     _lastDownloadCount = _cachedDownloadCount;
                     Progress = (float)_lastDownloadBytes / TotalDownloadBytes;
-
-                    if (DownloadUpdateCallback != null)
-                    {
-                        var data = new DownloadUpdateData();
-                        data.PackageName = _packageName;
-                        data.Progress = Progress;
-                        data.TotalDownloadCount = TotalDownloadCount;
-                        data.CurrentDownloadCount = _lastDownloadCount;
-                        data.TotalDownloadBytes = TotalDownloadBytes;
-                        data.CurrentDownloadBytes = _lastDownloadBytes;
-                        DownloadUpdateCallback.Invoke(data);
-                    }
+                    OnDownloadProgressCallback?.Invoke(TotalDownloadCount, _lastDownloadCount, TotalDownloadBytes, _lastDownloadBytes);
                 }
 
                 // 动态创建新的下载器到最大数量限制
@@ -204,20 +177,10 @@ namespace YooAsset
                         int index = _bundleInfoList.Count - 1;
                         var bundleInfo = _bundleInfoList[index];
                         var downloader = bundleInfo.CreateDownloader(_failedTryAgain, _timeout);
-                        downloader.StartOperation();
-                        this.AddChildOperation(downloader);
-
+                        downloader.SendRequest();
                         _downloaders.Add(downloader);
                         _bundleInfoList.RemoveAt(index);
-
-                        if (DownloadFileBeginCallback != null)
-                        {
-                            var data = new DownloadFileData();
-                            data.PackageName = _packageName;
-                            data.FileName = bundleInfo.Bundle.BundleName;
-                            data.FileSize = bundleInfo.Bundle.FileSize;
-                            DownloadFileBeginCallback.Invoke(data);
-                        }
+                        OnStartDownloadFileCallback?.Invoke(bundleInfo.Bundle.BundleName, bundleInfo.Bundle.FileSize);
                     }
                 }
 
@@ -227,41 +190,19 @@ namespace YooAsset
                     if (_failedList.Count > 0)
                     {
                         var failedDownloader = _failedList[0];
-                        string bundleName = failedDownloader.Bundle.BundleName;
+                        string bundleName = failedDownloader.GetDownloadBundleName();
                         _steps = ESteps.Done;
                         Status = EOperationStatus.Failed;
                         Error = $"Failed to download file : {bundleName}";
-
-                        if (DownloadErrorCallback != null)
-                        {
-                            var data = new DownloadErrorData();
-                            data.PackageName = _packageName;
-                            data.FileName = bundleName;
-                            data.ErrorInfo = failedDownloader.Error;
-                            DownloadErrorCallback.Invoke(data);
-                        }
-
-                        if (DownloadFinishCallback != null)
-                        {
-                            var data = new DownloaderFinishData();
-                            data.PackageName = _packageName;
-                            data.Succeed = false;
-                            DownloadFinishCallback.Invoke(data);
-                        }
+                        OnDownloadErrorCallback?.Invoke(bundleName, failedDownloader.GetLastError());
+                        OnDownloadOverCallback?.Invoke(false);
                     }
                     else
                     {
                         // 结算成功
                         _steps = ESteps.Done;
                         Status = EOperationStatus.Succeed;
-
-                        if (DownloadFinishCallback != null)
-                        {
-                            var data = new DownloaderFinishData();
-                            data.PackageName = _packageName;
-                            data.Succeed = true;
-                            DownloadFinishCallback.Invoke(data);
-                        }
+                        OnDownloadOverCallback?.Invoke(true);
                     }
                 }
             }
@@ -305,18 +246,16 @@ namespace YooAsset
             HashSet<string> temper = new HashSet<string>();
             foreach (var bundleInfo in _bundleInfoList)
             {
-                string combineGUID = bundleInfo.GetDownloadCombineGUID();
-                if (temper.Contains(combineGUID) == false)
+                if (temper.Contains(bundleInfo.CachedDataFilePath) == false)
                 {
-                    temper.Add(combineGUID);
+                    temper.Add(bundleInfo.CachedDataFilePath);
                 }
             }
 
             // 合并下载列表
             foreach (var bundleInfo in downloader._bundleInfoList)
             {
-                string combineGUID = bundleInfo.GetDownloadCombineGUID();
-                if (temper.Contains(combineGUID) == false)
+                if (temper.Contains(bundleInfo.CachedDataFilePath) == false)
                 {
                     _bundleInfoList.Add(bundleInfo);
                 }
@@ -333,7 +272,7 @@ namespace YooAsset
         {
             if (_steps == ESteps.None)
             {
-                OperationSystem.StartOperation(_packageName, this);
+                OperationSystem.StartOperation(this);
             }
         }
 
@@ -363,63 +302,69 @@ namespace YooAsset
                 _steps = ESteps.Done;
                 Status = EOperationStatus.Failed;
                 Error = "User cancel.";
-
-                foreach (var downloader in _downloaders)
-                {
-                    downloader.Release();
-                }
+                ReleaseAllDownloader();
             }
+        }
+        private void ReleaseAllDownloader()
+        {
+            foreach (var downloader in _downloaders)
+            {
+                downloader.Release();
+            }
+
+            // 注意：停止不再使用的下载器
+            _downloadMgr.AbortUnusedDownloader();
         }
     }
 
     public sealed class ResourceDownloaderOperation : DownloaderOperation
     {
-        internal ResourceDownloaderOperation(string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
-            : base(packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout)
+        internal ResourceDownloaderOperation(DownloadManager downloadMgr, string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
+            : base(downloadMgr, packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout)
         {
         }
 
         /// <summary>
         /// 创建空的下载器
         /// </summary>
-        internal static ResourceDownloaderOperation CreateEmptyDownloader(string packageName, int downloadingMaxNumber, int failedTryAgain, int timeout)
+        internal static ResourceDownloaderOperation CreateEmptyDownloader(DownloadManager downloadMgr, string packageName, int downloadingMaxNumber, int failedTryAgain, int timeout)
         {
             List<BundleInfo> downloadList = new List<BundleInfo>();
-            var operation = new ResourceDownloaderOperation(packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout);
+            var operation = new ResourceDownloaderOperation(downloadMgr, packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout);
             return operation;
         }
     }
     public sealed class ResourceUnpackerOperation : DownloaderOperation
     {
-        internal ResourceUnpackerOperation(string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
-            : base(packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout)
+        internal ResourceUnpackerOperation(DownloadManager downloadMgr, string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
+            : base(downloadMgr, packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout)
         {
         }
 
         /// <summary>
         /// 创建空的解压器
         /// </summary>
-        internal static ResourceUnpackerOperation CreateEmptyUnpacker(string packageName, int upackingMaxNumber, int failedTryAgain, int timeout)
+        internal static ResourceUnpackerOperation CreateEmptyUnpacker(DownloadManager downloadMgr, string packageName, int upackingMaxNumber, int failedTryAgain, int timeout)
         {
             List<BundleInfo> downloadList = new List<BundleInfo>();
-            var operation = new ResourceUnpackerOperation(packageName, downloadList, upackingMaxNumber, failedTryAgain, int.MaxValue);
+            var operation = new ResourceUnpackerOperation(downloadMgr, packageName, downloadList, upackingMaxNumber, failedTryAgain, int.MaxValue);
             return operation;
         }
     }
     public sealed class ResourceImporterOperation : DownloaderOperation
     {
-        internal ResourceImporterOperation(string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
-            : base(packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout)
+        internal ResourceImporterOperation(DownloadManager downloadMgr, string packageName, List<BundleInfo> downloadList, int downloadingMaxNumber, int failedTryAgain, int timeout)
+            : base(downloadMgr, packageName, downloadList, downloadingMaxNumber, failedTryAgain, timeout)
         {
         }
 
         /// <summary>
         /// 创建空的导入器
         /// </summary>
-        internal static ResourceImporterOperation CreateEmptyImporter(string packageName, int upackingMaxNumber, int failedTryAgain, int timeout)
+        internal static ResourceImporterOperation CreateEmptyImporter(DownloadManager downloadMgr, string packageName, int upackingMaxNumber, int failedTryAgain, int timeout)
         {
             List<BundleInfo> downloadList = new List<BundleInfo>();
-            var operation = new ResourceImporterOperation(packageName, downloadList, upackingMaxNumber, failedTryAgain, int.MaxValue);
+            var operation = new ResourceImporterOperation(downloadMgr, packageName, downloadList, upackingMaxNumber, failedTryAgain, int.MaxValue);
             return operation;
         }
     }

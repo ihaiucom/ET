@@ -16,29 +16,23 @@ namespace YooAsset.Editor
             // 检测基础构建参数
             buildParametersContext.CheckBuildParameters();
 
-            // 删除包裹目录
-            if (buildParameters.ClearBuildCacheFiles)
+            // 检测不被支持的参数
+            if (buildParameters.EnableSharePackRule)
             {
-                string packageRootDirectory = buildParameters.GetPackageRootDirectory();
-                if (EditorTools.DeleteDirectory(packageRootDirectory))
-                {
-                    BuildLogger.Log($"Delete package root directory: {packageRootDirectory}");
-                }
-            }
-
-            // 检测包裹输出目录是否存在
-            string packageOutputDirectory = buildParameters.GetPackageOutputDirectory();
-            if (Directory.Exists(packageOutputDirectory))
-            {
-                string message = BuildLogger.GetErrorMessage(ErrorCode.PackageOutputDirectoryExists, $"Package outout directory exists: {packageOutputDirectory}");
+                string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportSharePackRule, $"{nameof(EBuildPipeline.RawFileBuildPipeline)} not support share pack rule !");
                 throw new Exception(message);
             }
 
-            // 如果输出目录不存在
-            string pipelineOutputDirectory = buildParameters.GetPipelineOutputDirectory();
-            if (EditorTools.CreateDirectory(pipelineOutputDirectory))
+            // 检测不被支持的构建模式
+            if (buildParameters.BuildMode == EBuildMode.DryRunBuild)
             {
-                BuildLogger.Log($"Create pipeline output directory: {pipelineOutputDirectory}");
+                string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportBuildMode, $"{nameof(EBuildPipeline.RawFileBuildPipeline)} not support {nameof(EBuildMode.DryRunBuild)} build mode !");
+                throw new Exception(message);
+            }
+            if (buildParameters.BuildMode == EBuildMode.IncrementalBuild)
+            {
+                string message = BuildLogger.GetErrorMessage(ErrorCode.BuildPipelineNotSupportBuildMode, $"{nameof(EBuildPipeline.RawFileBuildPipeline)} not support {nameof(EBuildMode.IncrementalBuild)} build mode !");
+                throw new Exception(message);
             }
         }
     }

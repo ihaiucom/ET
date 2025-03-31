@@ -5,14 +5,6 @@ namespace YooAsset
 {
     internal class YooAssetsDriver : MonoBehaviour
     {
-#if UNITY_EDITOR
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        private static void OnRuntimeInitialize()
-        {
-            LastestUpdateFrame = 0;
-        }
-#endif
-
         private static int LastestUpdateFrame = 0;
 
         void Update()
@@ -20,13 +12,6 @@ namespace YooAsset
             DebugCheckDuplicateDriver();
             YooAssets.Update();
         }
-
-#if UNITY_EDITOR
-        void OnApplicationQuit()
-        {
-            YooAssets.OnApplicationQuit();
-        }
-#endif
 
         [Conditional("DEBUG")]
         private void DebugCheckDuplicateDriver()

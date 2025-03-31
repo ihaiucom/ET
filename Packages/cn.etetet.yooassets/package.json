@@ -1,7 +1,7 @@
-{
+﻿{
   "name": "cn.etetet.yooassets",
   "displayName": "ET.YooAssets",
-  "version": "2.3.6",
+  "version": "2.1.4",
   "unity": "2022.3",
   "description": "unity3d resources management system.",
   "author": {
@@ -14,13 +14,12 @@
   },
   "relatedPackages": {},
   "dependencies": {
-    "com.unity.scriptablebuildpipeline": "1.21.25",
+    "com.unity.scriptablebuildpipeline": "1.21.21",
     "com.unity.modules.assetbundle": "1.0.0",
     "com.unity.modules.unitywebrequest": "1.0.0",
     "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "37a739f752253e451e8da80c3781081d2a629cde"
+  }
 }

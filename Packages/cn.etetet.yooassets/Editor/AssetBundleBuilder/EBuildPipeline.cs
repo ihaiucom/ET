@@ -7,11 +7,6 @@ namespace YooAsset.Editor
     public enum EBuildPipeline
     {
         /// <summary>
-        /// 编辑器下的模拟构建管线（ESBP）
-        /// </summary>
-        EditorSimulateBuildPipeline,
-
-        /// <summary>
         /// 传统内置构建管线 (BBP)
         /// </summary>
         BuiltinBuildPipeline,

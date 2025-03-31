@@ -6,14 +6,11 @@
     "name": "tanghai",
     "url": "https://github.com/egametang/ET"
   },
-  "version": "1.10.1",
+  "version": "1.10.0",
   "description": "Copy From https://github.com/Cysharp/MemoryPack",
-  "keywords": [
-    "Serialization"
-  ],
+  "keywords": [ "Serialization" ],
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "f0aed60a090b1940ce0a422d0d2433bcde4211f1"
+  }
 }

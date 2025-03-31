@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 using System.IO;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace YooAsset
 {
@@ -27,7 +29,7 @@ namespace YooAsset
             if (string.IsNullOrEmpty(str))
                 return str;
 
-            int index = str.LastIndexOf('.');
+            int index = str.LastIndexOf(".");
             if (index == -1)
                 return str;
             else
@@ -119,7 +121,7 @@ namespace YooAsset
         public static string ReadAllText(string filePath)
         {
             if (File.Exists(filePath) == false)
-                return null;
+                return string.Empty;
             return File.ReadAllText(filePath, Encoding.UTF8);
         }
 
@@ -213,20 +215,12 @@ namespace YooAsset
         /// </summary>
         public static string FileSHA1(string filePath)
         {
-            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                return StreamSHA1(fs);
-            }
-        }
-
-        /// <summary>
-        /// 获取文件的Hash值
-        /// </summary>
-        public static string FileSHA1Safely(string filePath)
-        {
             try
             {
-                return FileSHA1(filePath);
+                using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    return StreamSHA1(fs);
+                }
             }
             catch (Exception e)
             {
@@ -273,20 +267,12 @@ namespace YooAsset
         /// </summary>
         public static string FileMD5(string filePath)
         {
-            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                return StreamMD5(fs);
-            }
-        }
-
-        /// <summary>
-        /// 获取文件的MD5
-        /// </summary>
-        public static string FileMD5Safely(string filePath)
-        {
             try
             {
-                return FileMD5(filePath);
+                using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    return StreamMD5(fs);
+                }
             }
             catch (Exception e)
             {
@@ -331,20 +317,12 @@ namespace YooAsset
         /// </summary>
         public static string FileCRC32(string filePath)
         {
-            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                return StreamCRC32(fs);
-            }
-        }
-
-        /// <summary>
-        /// 获取文件的CRC32
-        /// </summary>
-        public static string FileCRC32Safely(string filePath)
-        {
             try
             {
-                return FileCRC32(filePath);
+                using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    return StreamCRC32(fs);
+                }
             }
             catch (Exception e)
             {

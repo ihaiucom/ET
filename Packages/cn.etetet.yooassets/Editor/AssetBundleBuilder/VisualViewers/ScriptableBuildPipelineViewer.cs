@@ -22,20 +22,18 @@ namespace YooAsset.Editor
         /// </summary>
         protected override void ExecuteBuild()
         {
+            var buildMode = AssetBundleBuilderSetting.GetPackageBuildMode(PackageName, BuildPipeline);
             var fileNameStyle = AssetBundleBuilderSetting.GetPackageFileNameStyle(PackageName, BuildPipeline);
             var buildinFileCopyOption = AssetBundleBuilderSetting.GetPackageBuildinFileCopyOption(PackageName, BuildPipeline);
             var buildinFileCopyParams = AssetBundleBuilderSetting.GetPackageBuildinFileCopyParams(PackageName, BuildPipeline);
             var compressOption = AssetBundleBuilderSetting.GetPackageCompressOption(PackageName, BuildPipeline);
-            var clearBuildCache = AssetBundleBuilderSetting.GetPackageClearBuildCache(PackageName, BuildPipeline);
-            var useAssetDependencyDB = AssetBundleBuilderSetting.GetPackageUseAssetDependencyDB(PackageName, BuildPipeline);
-            var builtinShaderBundleName = GetBuiltinShaderBundleName();
 
             ScriptableBuildParameters buildParameters = new ScriptableBuildParameters();
             buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
             buildParameters.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
             buildParameters.BuildPipeline = BuildPipeline.ToString();
-            buildParameters.BuildBundleType = (int)EBuildBundleType.AssetBundle;
             buildParameters.BuildTarget = BuildTarget;
+            buildParameters.BuildMode = buildMode;
             buildParameters.PackageName = PackageName;
             buildParameters.PackageVersion = GetPackageVersion();
             buildParameters.EnableSharePackRule = true;
@@ -43,11 +41,8 @@ namespace YooAsset.Editor
             buildParameters.FileNameStyle = fileNameStyle;
             buildParameters.BuildinFileCopyOption = buildinFileCopyOption;
             buildParameters.BuildinFileCopyParams = buildinFileCopyParams;
-            buildParameters.CompressOption = compressOption;
-            buildParameters.ClearBuildCacheFiles = clearBuildCache;
-            buildParameters.UseAssetDependencyDB = useAssetDependencyDB;
-            buildParameters.BuiltinShadersBundleName = builtinShaderBundleName;
             buildParameters.EncryptionServices = CreateEncryptionInstance();
+            buildParameters.CompressOption = compressOption;
 
             ScriptableBuildPipeline pipeline = new ScriptableBuildPipeline();
             var buildResult = pipeline.Run(buildParameters, true);
@@ -55,15 +50,12 @@ namespace YooAsset.Editor
                 EditorUtility.RevealInFinder(buildResult.OutputPackageDirectory);
         }
 
-        /// <summary>
-        /// 内置着色器资源包名称
-        /// 注意：和自动收集的着色器资源包名保持一致！
-        /// </summary>
-        private string GetBuiltinShaderBundleName()
+        protected override List<Enum> GetSupportBuildModes()
         {
-            var uniqueBundleName = AssetBundleCollectorSettingData.Setting.UniqueBundleName;
-            var packRuleResult = DefaultPackRule.CreateShadersPackRuleResult();
-            return packRuleResult.GetBundleName(PackageName, uniqueBundleName);
+            List<Enum> buildModeList = new List<Enum>();
+            buildModeList.Add(EBuildMode.IncrementalBuild);
+            buildModeList.Add(EBuildMode.SimulateBuild);
+            return buildModeList;
         }
     }
 }

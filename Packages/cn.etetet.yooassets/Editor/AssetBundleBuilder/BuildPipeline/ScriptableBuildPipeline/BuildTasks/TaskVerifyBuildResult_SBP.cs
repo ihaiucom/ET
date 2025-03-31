@@ -16,6 +16,10 @@ namespace YooAsset.Editor
             var buildParametersContext = context.GetContextObject<BuildParametersContext>();
             var buildParameters = buildParametersContext.Parameters as ScriptableBuildParameters;
 
+            // 模拟构建模式下跳过验证
+            if (buildParameters.BuildMode == EBuildMode.SimulateBuild)
+                return;
+
             // 验证构建结果
             if (buildParameters.VerifyBuildingResult)
             {
@@ -29,14 +33,15 @@ namespace YooAsset.Editor
         /// </summary>
         private void VerifyingBuildingResult(BuildContext context, IBundleBuildResults buildResults)
         {
+            var buildParameters = context.GetContextObject<BuildParametersContext>();
             var buildMapContext = context.GetContextObject<BuildMapContext>();
-            List<string> unityBuildContent = buildResults.BundleInfos.Keys.ToList();
+            List<string> unityCreateBundles = buildResults.BundleInfos.Keys.ToList();
 
-            // 1. 计划内容
-            List<string> planningContent = buildMapContext.Collection.Select(t => t.BundleName).ToList();
+            // 1. 过滤掉原生Bundle
+            List<string> expectBundles = buildMapContext.Collection.Select(t => t.BundleName).ToList();
 
-            // 2. 验证差异
-            List<string> exceptBundleList1 = unityBuildContent.Except(planningContent).ToList();
+            // 2. 验证Bundle
+            List<string> exceptBundleList1 = unityCreateBundles.Except(expectBundles).ToList();
             if (exceptBundleList1.Count > 0)
             {
                 foreach (var exceptBundle in exceptBundleList1)
@@ -49,8 +54,8 @@ namespace YooAsset.Editor
                 throw new Exception(exception);
             }
 
-            // 3. 验证差异
-            List<string> exceptBundleList2 = planningContent.Except(unityBuildContent).ToList();
+            // 3. 验证Bundle
+            List<string> exceptBundleList2 = expectBundles.Except(unityCreateBundles).ToList();
             if (exceptBundleList2.Count > 0)
             {
                 foreach (var exceptBundle in exceptBundleList2)

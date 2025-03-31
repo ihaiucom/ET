@@ -13,8 +13,8 @@
     "url": "https://github.com/egametang/ET"
   },
   "relatedPackages": {},
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ET-Packages"
-  },
-  "_fingerprint": "7f0867b9df645af5d8cc0be092501ff863cf2d69"
+  "publishConfig": 
+  { 
+    "registry": "https://npm.pkg.github.com/@ET-Packages" 
+  }
 }
