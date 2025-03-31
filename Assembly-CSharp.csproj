@@ -47,7 +47,6 @@
     <None Include="Packages\com.unity.ide.rider\package.json" />
     <None Include="Packages\cn.etetet.demores\packagegit.json" />
     <None Include="Packages\cn.etetet.referencecollector\package.json" />
-    <None Include="Packages\cn.etetet.excel\packagegit.json" />
     <None Include="Packages\cn.etetet.memorypack\package.json" />
     <None Include="Packages\cn.etetet.sourcegenerator\package.json" />
     <None Include="Packages\cn.etetet.demores\package.json" />
@@ -58,7 +57,6 @@
     <None Include="Assets\link.xml" />
     <None Include="Packages\cn.etetet.mathematics\packagegit.json" />
     <None Include="Packages\com.etetet.init\package.json" />
-    <None Include="Packages\cn.etetet.excel\package.json" />
     <None Include="Packages\cn.etetet.yiuiinvoke\packagegit.json" />
     <None Include="Packages\cn.etetet.memorypack\packagegit.json" />
     <None Include="Packages\cn.etetet.hybridclr\package.json" />

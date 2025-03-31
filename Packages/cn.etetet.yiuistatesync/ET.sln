@@ -47,8 +47,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ET.SourceGeneratorAttribute
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ET.SourceGeneratorAttribute", "ET.SourceGeneratorAttribute.csproj", "{5E1B6EBA-FB66-A2AB-F74C-651931E8F8A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ET.ExcelExporter", "Packages\cn.etetet.excel\DotNet~\ET.ExcelExporter.csproj", "{B62663F3-87CD-4FE5-892D-2FA15017CC01}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ET.Proto2CS", "Packages\cn.etetet.proto\DotNet~\ET.Proto2CS.csproj", "{BCC88832-608F-4D7E-AFF7-4EED50D5792C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ET.Proto.Editor", "ET.Proto.Editor.csproj", "{AD2911DA-1407-E041-BC8E-81A8F3A453CD}"

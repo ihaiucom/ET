@@ -176,8 +176,8 @@
     <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\YIUIGen\ModelDisplay\ModelDisplayDemoViewComponentSystemGen.cs" />
     <Compile Include="Packages\cn.etetet.yiuigm\Scripts\HotfixView\Client\YIUISystem\GM\GMPanelComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.yiui3ddisplay\Scripts\HotfixView\Client\YIUISystem\ModelDisplay\ModelDisplayDemoViewComponentSystem.cs" />
-    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\UI\UILobby\LoginFinish_CreateLobbyUI.cs" />
     <Compile Include="Packages\cn.etetet.yiuilubangen\Scripts\HotfixView\Client\LubanClientLoaderInvoker.cs" />
+    <Compile Include="Packages\cn.etetet.yiuistatesync\Scripts\HotfixView\Client\UI\UILobby\LoginFinish_CreateLobbyUI.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\System\Common\YIUICommonComponentSystem.cs" />
     <Compile Include="Packages\cn.etetet.yiuiyooassets\Scripts\HotfixView\Client\YIUIFactory_YooAsset.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\HotfixView\Client\YIUICountDown\CountDownMgrSystem.cs" />

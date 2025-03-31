@@ -36,22 +36,6 @@
         },
         {
             "Address": "",
-            "AssetPath": "Packages/cn.etetet.excel/Config/Bytes/c/AIConfigCategory.bytes",
-            "AssetGUID": "",
-            "AssetTags": [],
-            "BundleID": 3,
-            "DependBundleIDs": []
-        },
-        {
-            "Address": "",
-            "AssetPath": "Packages/cn.etetet.excel/Config/Bytes/c/UnitConfigCategory.bytes",
-            "AssetGUID": "",
-            "AssetTags": [],
-            "BundleID": 3,
-            "DependBundleIDs": []
-        },
-        {
-            "Address": "",
             "AssetPath": "Packages/cn.etetet.statesync/Bundles/UI/UIHelp.prefab",
             "AssetGUID": "",
             "AssetTags": [],

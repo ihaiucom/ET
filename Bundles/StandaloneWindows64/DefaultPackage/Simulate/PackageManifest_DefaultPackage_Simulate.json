@@ -72,6 +72,13 @@
             "BundleID": 1
         },
         {
+            "Address": "ErrorConfigCategory",
+            "AssetPath": "Packages/cn.etetet.yiuilubangen/Assets/Config/Binary/Client/ErrorConfigCategory.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
             "Address": "UnitConfigCategory",
             "AssetPath": "Packages/cn.etetet.yiuilubangen/Assets/Config/Binary/Client/UnitConfigCategory.bytes",
             "AssetGUID": "",
@@ -351,7 +358,7 @@
             "UnityCRC": 0,
             "FileHash": "09fb6d0d0f68d58856759eb451450f1f",
             "FileCRC": "00000000",
-            "FileSize": 1339636,
+            "FileSize": 1341228,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
@@ -361,7 +368,7 @@
             "UnityCRC": 0,
             "FileHash": "fa809393103d06badfdbff906c6c5c15",
             "FileCRC": "00000000",
-            "FileSize": 116,
+            "FileSize": 141,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
