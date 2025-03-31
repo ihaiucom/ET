@@ -58,12 +58,14 @@
     <Compile Include="Packages\cn.etetet.router\Scripts\Model\Server\RouterComponent.cs" />
     <Compile Include="Packages\cn.etetet.yooassets\Scripts\Model\Share\CoroutineLockType.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Model\Share\Message\MessageSessionHandlerAttribute.cs" />
+    <Compile Include="Packages\cn.etetet.yiuilubangen\CodeMode\Model\ClientServer\ConfigGen\ErrorConfig.cs" />
     <Compile Include="Packages\cn.etetet.numeric\Scripts\Model\Share\INumericWatcher.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Model\Share\Message\SessionAcceptTimeoutComponent.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\Model\Client\Main\Scene\Wait_SceneChangeFinish.cs" />
     <Compile Include="Packages\cn.etetet.statesync\Scripts\Model\Share\CurrentScenesComponent.cs" />
     <Compile Include="Packages\cn.etetet.console\Scripts\Model\Server\IConsoleHandler.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Model\Share\Message\NetComponent.cs" />
+    <Compile Include="Packages\cn.etetet.yiuilubangen\CodeMode\Model\ClientServer\ConfigGen\ErrorConfigCategory.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Model\Share\PackageType.cs" />
     <Compile Include="Packages\cn.etetet.login\Scripts\Model\Client\PlayerComponent.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Model\Share\Actor\MessageSenderStruct.cs" />
