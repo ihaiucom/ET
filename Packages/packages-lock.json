@@ -185,6 +185,14 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "cn.etetet.webgl": {
+      "version": "file:cn.etetet.webgl",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "cn.etetet.core": "2.0.8"
+      }
+    },
     "cn.etetet.yiui3ddisplay": {
       "version": "file:cn.etetet.yiui3ddisplay",
       "depth": 0,

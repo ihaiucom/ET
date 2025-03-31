@@ -53,7 +53,10 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\ETTask\AsyncETTaskMethodBuilder.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\Editor\ScriptHelper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Helper\WinPeriod.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\Settings.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WService.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\IMessage.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WebSocketState.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\MessageSerializeHelper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\AService.cs" />
     <Compile Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\Share\System\YIUIInvokeSystem.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Method\StaticMethod.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\KService.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\Response.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\CloseStatusCode.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\Kcp\Kcp.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\EventSystem\BaseAttribute.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\Options\Options.cs" />
@@ -94,6 +98,7 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\ETTask\ETCancellationToken.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\Entity\AwakeAsync\EntityAwakeAsyncSystem.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\Entity\AwakeAsync\EntityAwakeAsync.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WChannel_JS.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\MultiMap.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Object\MessageObject.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Fiber\Mailboxes.cs" />
@@ -106,6 +111,8 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\EventSystem\IInvoke.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\EntitySystemSingleton.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\DoubleMap.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\MessageEventArgs.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\ErrorEventArgs.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\Code\CodeProcessAttribute.cs" />
     <Compile Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\Share\Handler\YIUIInvokeHandler.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Helper\ProcessHelper.cs" />
@@ -118,6 +125,8 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\MessageAttribute.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Helper\FileHelper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\OpcodeRangeDefine.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WChannel.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\CloseEventArgs.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\NetServices.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\Code\CodeTypes.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\ComponentView.cs" />
@@ -139,14 +148,17 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Helper\NetworkHelper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\IdGenerater\IdGenerater.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\MultiMapSet.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WService_JS.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Serialize\MemoryPackChildrenCollectionFormatter.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\EntityRef.cs" />
     <Compile Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\Share\Handler\YIUIInvokeReturnHandler.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\Entity\Entity_Extend.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WebSocketManager.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\ComponentsCollection.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\Fiber\MainThreadScheduler.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\IKcpTransport.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\Kcp\ikcph.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WebSocketTransport.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\Event\EventSystem_Invoke.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\PacketParser.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\TService.cs" />
@@ -161,6 +173,7 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Serialize\MongoHelper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\Fiber\IScheduler.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\EventSystem\EventSystem.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\IWebSocket.cs" />
     <Compile Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\Share\System\YIUIInvokeSystem_Void.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Helper\StringHelper.cs" />
     <Compile Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\Share\Attribute\YIUIInvokeSystemAttribute.cs" />
@@ -172,6 +185,7 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\HashSetComponent.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\ISerializeSystem.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\TimeInfo\TimeInfo.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\Opcode.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\Scene.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Helper\MD5Helper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Serialize\MongoRegister.cs" />
@@ -181,6 +195,7 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\World.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Serialize\MemoryPackHelper.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\ETTask\ETVoid.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\WebSocket.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\EntitySceneFactory.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\OpcodeType.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\Kcp\KcpPatial.cs" />
@@ -193,12 +208,14 @@
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\EventSystem\TypeSystems.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\Fiber\FiberManager.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Object\DisposeObject.cs" />
+    <Compile Include="Packages\cn.etetet.webgl\Scripts\Core\Share\OpenEventArgs.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Serialize\BsonComponentsCollectionSerializer.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Network\AChannel.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\World\EventSystem\InvokeAttribute.cs" />
     <Compile Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\Event\EYIUIInvokeType.cs" />
     <Compile Include="Packages\cn.etetet.core\Scripts\Core\Share\Entity\IGetComponentSysSystem.cs" />
     <None Include="Packages\cn.etetet.yiuiframework\Scripts\Core\Share\AssemblyReference.asmref" />
+    <None Include="Packages\cn.etetet.webgl\Scripts\Core\Share\AssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\Share\AssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.yiuiinvoke\Scripts\Core\YIUIAssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.core\Runtime\ET.Core.asmdef" />
