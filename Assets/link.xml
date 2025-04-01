@@ -5,9 +5,12 @@
     <assembly fullname="System" preserve="all"/>
     <assembly fullname="MongoDB.Bson" preserve="all"/>
     <assembly fullname="System.Runtime.CompilerServices.Unsafe" preserve="all"/>
-    <assembly fullname="UnityEngine.AnimationModule" preserve="all" />
-    <assembly fullname="mscorlib" preserve="all" />
-    <assembly fullname="UnityEngine.AssetBundleModule" preserve="all" />
-    <assembly fullname="UnityEngine.CoreModule" preserve="all" />
-    <assembly fullname="UnityEngine.InputLegacyModule" preserve="all" />
+    <assembly fullname="UnityEngine.AnimationModule" preserve="all"/>
+    <assembly fullname="mscorlib" preserve="all"/>
+    <assembly fullname="UnityEngine.AssetBundleModule" preserve="all"/>
+    <assembly fullname="UnityEngine.CoreModule" preserve="all"/>
+    <assembly fullname="UnityEngine.InputLegacyModule" preserve="all"/>
+    <assembly fullname="Sirenix.Serialization" preserve="all"/>
+    <assembly fullname="ET.YIUIFramework" preserve="all"/>
+    <assembly fullname="ET.Recast" preserve="all"/>
 </linker>
