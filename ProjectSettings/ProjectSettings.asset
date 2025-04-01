@@ -849,7 +849,7 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 1
+  webGLCompressionFormat: 2
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
@@ -875,7 +875,7 @@ PlayerSettings:
     Stadia: DOTWEEN;TextMeshPro
     Standalone: UNITY;ENABLE_VIEW;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;DOTWEEN;TextMeshPro;INITED;YIUI
     VisionOS: DOTWEEN;TextMeshPro
-    WebGL: UNITY;ENABLE_VIEW;DOTWEEN;TextMeshPro
+    WebGL: UNITY;ENABLE_VIEW;DOTWEEN;TextMeshPro;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;INITED;YIUI
     Windows Store Apps: DOTWEEN
     XboxOne: DOTWEEN;TextMeshPro
     iPhone: UNITY;ENABLE_VIEW;DOTWEEN;TextMeshPro
@@ -1006,7 +1006,13 @@ PlayerSettings:
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  qualitySettingsNames: []
+  qualitySettingsNames:
+  - Fastest
+  - Fast
+  - Simple
+  - Good
+  - Beautiful
+  - Fantastic
   projectName: 
   organizationId: 
   cloudEnabled: 0

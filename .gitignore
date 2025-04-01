@@ -54,3 +54,8 @@ Unity.sln.DotSettings.user
 # /ET.sln
 # Assets/Plugins/Sirenix*
 Assets/HybridCLR*
+Assets/StreamingAssets/DefaultPackage
+Assets/StreamingAssets/DefaultPackage.meta
+Bundles/StandaloneWindows64
+Bundles/WebGL
+Packages/cn.etetet.loader/Bundles/AotDlls

@@ -18,6 +18,7 @@ namespace ET
         public override void OnInspectorGUI()
         {
             GlobalConfig globalConfig = (GlobalConfig)this.target;
+            globalConfig.EnableDll = EditorGUILayout.Toggle("EnableDll", globalConfig.EnableDll);
             CodeMode codeMode = (CodeMode)EditorGUILayout.EnumPopup("CodeMode", globalConfig.CodeMode);
             if (codeMode != globalConfig.CodeMode)
             {

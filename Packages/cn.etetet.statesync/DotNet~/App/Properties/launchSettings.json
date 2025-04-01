@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "ET.App": {
+      "commandName": "Project",
+      "environmentVariables": {
+        
+      },
+      "workingDirectory": "../",
+      "commandLineArgs": "--SceneName=StateSync --Process=1 --StartConfig=StartConfig/Localhost --Console=1"
+    }
+  }
+}

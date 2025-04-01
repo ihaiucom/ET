@@ -14,26 +14,88 @@ namespace ET
 
         private Dictionary<string, TextAsset> dlls;
         private Dictionary<string, TextAsset> aotDlls;
+        private bool enableDll;
 
         public void Awake()
         {
+            if (Define.IsEditor)
+            {
+                this.enableDll = Resources.Load<GlobalConfig>("GlobalConfig").EnableDll;
+            }
+            else
+            {
+                this.enableDll = true;
+            }
         }
 
         private async ETTask DownloadAsync()
         {
-            if (!Define.IsEditor)
+            if (!Define.IsEditor && enableDll)
             {
                 this.dlls = await ResourcesComponent.Instance.LoadAllAssetsAsync<TextAsset>($"Packages/cn.etetet.loader/Bundles/Code/ET.Model.dll.bytes");
                 if (Define.EnableIL2CPP)
                 {
                     this.aotDlls = await ResourcesComponent.Instance.LoadAllAssetsAsync<TextAsset>($"Packages/cn.etetet.loader/Bundles/AotDlls/mscorlib.dll.bytes");
+                    if (this.aotDlls == null)
+                    {
+                        Debug.LogError("aotDlls is null");
+                    }
                 }
             }
         }
 
         public async ETTask Start()
         {
-            await DownloadAsync();
+            Assembly hotfixAssembly = null; Assembly hotfixViewAssembly = null;
+            if (enableDll)
+            {
+                await DownloadAsync();
+                LoadModel();
+                ( hotfixAssembly,  hotfixViewAssembly) = this.LoadHotfix();
+            }
+            else
+            {
+#if !UNITY_WEBGL
+                var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+                foreach (var assembly in assemblies)
+                {
+                    string assemblyName = assembly.GetName().Name;
+                    Debug.Log(assemblyName);
+                    if (assemblyName == "ET.Model")
+                    {
+                        this.modelAssembly = assembly;
+                    }
+                    if (assemblyName == "ET.ModelView")
+                    {
+                        this.modelViewAssembly = assembly;
+                    }
+                    else if (assemblyName == "ET.Hotfix")
+                    {
+                        hotfixAssembly = assembly;
+                    }   
+                    else if (assemblyName == "ET.HotfixView")
+                    {
+                        hotfixViewAssembly = assembly;
+                    }
+                }
+                
+#endif
+            }
+
+            
+
+            World.Instance.AddSingleton<CodeTypes, Assembly[]>(new[]
+            {
+                typeof (World).Assembly, typeof (Init).Assembly, this.modelAssembly, this.modelViewAssembly, hotfixAssembly,
+                hotfixViewAssembly
+            });
+
+            IStaticMethod start = new StaticMethod(this.modelAssembly, "ET.Entry", "Start");
+            start.Run();
+        }
+
+        private (Assembly, Assembly) LoadModel()
+        {
             
             if (!Define.IsEditor)
             {
@@ -49,11 +111,16 @@ namespace ET
 
                 if (Define.EnableIL2CPP)
                 {
-                    foreach (var kv in this.aotDlls)
+                    if (this.aotDlls != null)
                     {
-                        TextAsset textAsset = kv.Value;
-                        RuntimeApi.LoadMetadataForAOTAssembly(textAsset.bytes, HomologousImageMode.SuperSet);
+                        foreach (var kv in this.aotDlls)
+                        {
+                            if(kv.Value == null) continue;
+                            TextAsset textAsset = kv.Value;
+                            RuntimeApi.LoadMetadataForAOTAssembly(textAsset.bytes, HomologousImageMode.SuperSet);
+                        }
                     }
+
                 }
                 this.modelAssembly = Assembly.Load(modelAssBytes, modelPdbBytes);
                 this.modelViewAssembly = Assembly.Load(modelViewAssBytes, modelViewPdbBytes);
@@ -67,17 +134,7 @@ namespace ET
                 this.modelAssembly = Assembly.Load(modelAssBytes, modelPdbBytes);
                 this.modelViewAssembly = Assembly.Load(modelViewAssBytes, modelViewPdbBytes);
             }
-            
-            (Assembly hotfixAssembly, Assembly hotfixViewAssembly) = this.LoadHotfix();
-
-            World.Instance.AddSingleton<CodeTypes, Assembly[]>(new[]
-            {
-                typeof (World).Assembly, typeof (Init).Assembly, this.modelAssembly, this.modelViewAssembly, hotfixAssembly,
-                hotfixViewAssembly
-            });
-
-            IStaticMethod start = new StaticMethod(this.modelAssembly, "ET.Entry", "Start");
-            start.Run();
+            return (this.modelAssembly, this.modelViewAssembly);
         }
 
         private (Assembly, Assembly) LoadHotfix()

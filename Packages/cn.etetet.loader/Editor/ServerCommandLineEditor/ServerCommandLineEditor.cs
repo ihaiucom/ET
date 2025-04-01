@@ -17,7 +17,7 @@ namespace ET
         [MenuItem("ET/Loader/ServerTools", false, ETMenuItemPriority.ServerTools)]
         public static void ShowWindow()
         {
-            GetWindow<ServerCommandLineEditor>();
+            GetWindow<ServerCommandLineEditor>().Show();
         }
 
         private int selectStartConfigIndex = 1;
@@ -41,6 +41,7 @@ namespace ET
             if (GUILayout.Button("Start Server(Single Process)"))
             {
                 string arguments = $"Bin/ET.App.dll --SceneName={globalConfig.SceneName} --Process=1 --StartConfig=StartConfig/{this.startConfig} --Console=1";
+                Debug.Log(arguments);
                 ProcessHelper.DotNet(arguments, "./");
             }
 

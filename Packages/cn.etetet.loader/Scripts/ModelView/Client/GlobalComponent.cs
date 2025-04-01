@@ -10,5 +10,6 @@ namespace ET
         public Transform UI;
 
         public GlobalConfig GlobalConfig { get; set; }
+        
     }
 }

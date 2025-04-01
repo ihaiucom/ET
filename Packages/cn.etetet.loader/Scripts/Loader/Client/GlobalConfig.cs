@@ -18,6 +18,8 @@ namespace ET
     [CreateAssetMenu(menuName = "ET/CreateGlobalConfig", fileName = "GlobalConfig", order = 0)]
     public class GlobalConfig: ScriptableObject
     {
+        public bool EnableDll = true;
+        
         public CodeMode CodeMode;
 
         public string SceneName;

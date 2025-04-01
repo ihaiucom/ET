@@ -54,9 +54,7 @@
     <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Client\Init.cs" />
     <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Client\CoroutineHelper.cs" />
     <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Client\UnityLogger.cs" />
-    <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Server\Init.cs" />
-    <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Server\NLogger.cs" />
-    <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Server\CodeLoader.cs" />
+    <Compile Include="Assets\HybridCLR\AOTGenericReferences.cs" />
     <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Client\Define.cs" />
     <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Client\CodeLoader.cs" />
     <Compile Include="Packages\cn.etetet.loader\Scripts\Loader\Client\GlobalConfig.cs" />
@@ -64,7 +62,7 @@
     <None Include="Packages\cn.etetet.loader\Scripts\Loader\Client\AssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.ui\Scripts\Loader\Client\AssemblyReference.asmref" />
     <None Include="Assets\HybridCLR\AssemblyReferenceToLoader.asmref" />
-    <None Include="Packages\cn.etetet.loader\Scripts\Loader\Server\AssemblyReference.asmref" />
+    <None Include="Assets\HybridCLR\link.xml" />
     <None Include="Packages\cn.etetet.loader\Scripts\Loader\Share\AssemblyReference.asmref" />
     <None Include="Packages\cn.etetet.hybridclr\HybridCLR\AssemblyReferenceToLoader.asmref" />
     <None Include="Packages\cn.etetet.loader\Runtime\ET.Loader.asmdef" />
