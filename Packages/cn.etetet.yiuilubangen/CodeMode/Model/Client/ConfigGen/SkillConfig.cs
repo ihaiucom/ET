@@ -22,8 +22,8 @@ namespace ET
             CCode = _buf.ReadString();
             Name = _buf.ReadString();
             CRace = _buf.ReadString();
-            Position = ExternalTypeUtil.NewVector2(vec2.Deserializevec2(_buf));
-            AudioType = (UnityEngine.AudioType)_buf.ReadInt();
+            Position = vec2.Deserializevec2(_buf);
+            AudioType = (AudioType)_buf.ReadInt();
             Researchubertip = _buf.ReadString();
 
             EndInit();
@@ -57,11 +57,11 @@ namespace ET
         /// <summary>
         /// 位置
         /// </summary>
-        public readonly UnityEngine.Vector2 Position;
+        public readonly vec2 Position;
         /// <summary>
         /// 音效类型
         /// </summary>
-        public readonly UnityEngine.AudioType AudioType;
+        public readonly AudioType AudioType;
         /// <summary>
         /// 学习提示内容
         /// </summary>

@@ -22,8 +22,8 @@ namespace ET
             CCode = _buf.ReadString();
             Name = _buf.ReadString();
             CRace = _buf.ReadString();
-            Position = ExternalTypeUtil.NewVector2(vec2.Deserializevec2(_buf));
-            AudioType = (CustomAudioType)_buf.ReadInt();
+            Position = vec2.Deserializevec2(_buf);
+            AudioType = (AudioType)_buf.ReadInt();
 
             EndInit();
         }
@@ -56,11 +56,11 @@ namespace ET
         /// <summary>
         /// 位置
         /// </summary>
-        public readonly System.Numerics.Vector2 Position;
+        public readonly vec2 Position;
         /// <summary>
         /// 音效类型
         /// </summary>
-        public readonly CustomAudioType AudioType;
+        public readonly AudioType AudioType;
     
         public const int __ID__ = -844226349;
         public override int GetTypeId() => __ID__;
