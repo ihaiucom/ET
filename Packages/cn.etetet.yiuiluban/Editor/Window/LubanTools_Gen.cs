@@ -166,6 +166,7 @@ namespace YIUI.Luban.Editor
 
         private static void RunProcess(string exe, string arguments, bool tips = false, string workingDirectory = ".", bool waitExit = true)
         {
+            Debug.Log($"RunProcess: {exe} {arguments}  {workingDirectory}");
             var redirectStandardOutput = false;
             var redirectStandardError  = false;
             var useShellExecute        = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);

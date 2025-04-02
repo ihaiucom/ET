@@ -1,0 +1,21 @@
+﻿{
+  "name": "cn.etetet.testluban",
+  "displayName": "ET.TestLuban",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "测试Luban",
+  "author": {
+    "name": "zengfeng75@qq.om",
+    "url": "https://github.com/ihaiucom/Zeng.War"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihaiucom/Zeng.War"
+  },
+  "repository": {},
+  "relatedPackages": {},
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
+  }
+}

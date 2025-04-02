@@ -1,0 +1,13 @@
+<module name="">
+    <enum name="AudioType">
+        <var name="UNKNOWN" value="0"/>
+        <var name="ACC" value="1"/>
+        <var name="AIFF" value="2"/>
+        <mapper target="client" codeTarget="cs-bin,cs-simple-json">
+            <option name="type" value="UnityEngine.AudioType"/>
+        </mapper>
+        <mapper target="server,all" codeTarget="cs-bin,cs-dotnet-json">
+            <option name="type" value="CustomAudioType"/>
+        </mapper>
+    </enum>
+</module>

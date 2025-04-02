@@ -1,0 +1,86 @@
+[
+  {
+    "Id": 1,
+    "CAlias": "Aamk",
+    "CCode": "Aamk",
+    "Name": "属性加成",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 0
+  },
+  {
+    "Id": 2,
+    "CAlias": "ACs7",
+    "CCode": "AOsf",
+    "Name": "野性之魂",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 1
+  },
+  {
+    "Id": 3,
+    "CAlias": "ACtn",
+    "CCode": "AOwd",
+    "Name": "孳生触须",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 2
+  },
+  {
+    "Id": 4,
+    "CAlias": "ANav",
+    "CCode": "AHav",
+    "Name": "天神下凡",
+    "CRace": "OTHER",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 0
+  },
+  {
+    "Id": 5,
+    "CAlias": "ANha",
+    "CCode": "Ahar",
+    "Name": "采集",
+    "CRace": "OTHER",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 1
+  },
+  {
+    "Id": 6,
+    "CAlias": "ANsh",
+    "CCode": "AOsh",
+    "Name": "震荡波",
+    "CRace": "OTHER",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 2
+  },
+  {
+    "Id": 7,
+    "CAlias": "ACs8",
+    "CCode": "AOsf",
+    "Name": "灵魂兽",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 0
+  }
+]

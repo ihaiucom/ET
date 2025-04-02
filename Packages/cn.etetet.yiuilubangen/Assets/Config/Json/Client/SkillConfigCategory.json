@@ -1,0 +1,93 @@
+[
+  {
+    "Id": 1,
+    "CAlias": "Aamk",
+    "CCode": "Aamk",
+    "Name": "属性加成",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 0,
+    "Researchubertip": "敏捷、智力和力量获得永久提升。 |n|n|cffffcc001级|r - 所有属性增加3点。|n|cffffcc002级|r - 额外增加3点。|n|cffffcc003级|r - 额外增加3点。|n|cffffcc004级|r - 额外增加3点。"
+  },
+  {
+    "Id": 2,
+    "CAlias": "ACs7",
+    "CCode": "AOsf",
+    "Name": "野性之魂",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 1,
+    "Researchubertip": "召唤2头幽灵狼为先知而战。|n持续60秒。|n|n|cffffcc001级|r - 250点生命值，11-12点攻击力。|n|cffffcc002级|r - 350点生命值，16-17点攻击力，且具有致命一击技能。|n|cffffcc003级|r - 500点生命值，21-22点攻击力，且具有致命一击和隐形技能。"
+  },
+  {
+    "Id": 3,
+    "CAlias": "ACtn",
+    "CCode": "AOwd",
+    "Name": "孳生触须",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 2,
+    "Researchubertip": ""
+  },
+  {
+    "Id": 4,
+    "CAlias": "ANav",
+    "CCode": "AHav",
+    "Name": "天神下凡",
+    "CRace": "OTHER",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 0,
+    "Researchubertip": "天神下凡激活时，加里索斯勋爵会获得5点额外护甲、500点额外生命值和20点额外攻击力，并具有法术免疫。|n持续60秒。"
+  },
+  {
+    "Id": 5,
+    "CAlias": "ANha",
+    "CCode": "Ahar",
+    "Name": "采集",
+    "CRace": "OTHER",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 1,
+    "Researchubertip": ""
+  },
+  {
+    "Id": 6,
+    "CAlias": "ANsh",
+    "CCode": "AOsh",
+    "Name": "震荡波",
+    "CRace": "OTHER",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 2,
+    "Researchubertip": ""
+  },
+  {
+    "Id": 7,
+    "CAlias": "ACs8",
+    "CCode": "AOsf",
+    "Name": "灵魂兽",
+    "CRace": "CREEPS",
+    "Position": {
+      "x": 100,
+      "y": 200
+    },
+    "AudioType": 0,
+    "Researchubertip": ""
+  }
+]

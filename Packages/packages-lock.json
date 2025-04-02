@@ -167,6 +167,12 @@
         "cn.etetet.startconfig": "3.0.0"
       }
     },
+    "cn.etetet.testluban": {
+      "version": "file:cn.etetet.testluban",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "cn.etetet.ui": {
       "version": "file:cn.etetet.ui",
       "depth": 0,
