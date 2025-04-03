@@ -98,12 +98,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "cn.etetet.packagemanager": {
-      "version": "file:cn.etetet.packagemanager",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "cn.etetet.proto": {
       "version": "file:cn.etetet.proto",
       "depth": 0,
@@ -145,7 +139,6 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "cn.etetet.packagemanager": "1.0.0",
         "cn.etetet.actorlocation": "3.0.0",
         "cn.etetet.core": "3.0.3",
         "cn.etetet.loader": "3.0.1",

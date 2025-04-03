@@ -18,7 +18,7 @@ _ReSharper.CSharp/
 Library
 Logs
 UserSettings
-# /*.csproj
+/*.csproj
 # *.vsconfig
 ProjectSettings/RiderScriptEditorPersistedState.asset
 HybridCLRData
@@ -54,3 +54,9 @@ Unity.sln.DotSettings.user
 # /ET.sln
 # Assets/Plugins/Sirenix*
 Assets/HybridCLR*
+Assets/StreamingAssets
+Bundles/StandaloneWindows64
+Bundles/WebGL
+Packages/cn.etetet.loader/Bundles
+Assets/StreamingAssets.meta
+Unity.sln
